@@ -30,5 +30,12 @@ namespace appdesign
             Parkingscouting PS = new Parkingscouting();
             PS.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            EOPopslaan EOPopslaan = new EOPopslaan();
+            EOPopslaan.Show();
+        }
     }
 }

@@ -31,3 +31,5 @@ C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Applic
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.Keuzemenu.resources
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.EOP.resources
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.EOSkm.resources
+C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.EOPopslaan.resources
+C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.TA.resources

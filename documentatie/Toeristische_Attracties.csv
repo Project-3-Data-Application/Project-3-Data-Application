@@ -1,0 +1,60 @@
+Toeristische_attractie,Onderwerp,Bedekt,Reserveren_verplicht,Adres,Postcode,Gebied,Plaats,Tijden
+Euromast,High Tea,Ja,Ja,Parkhaven 20,3016GM,Centrum,Rotterdam,10:00-16:00 (Alle dagen)
+Euromast,Diner,Ja,Ja,Parkhaven 20,3016GM,Centrum,Rotterdam,16:00-23:00 (Alle dagen)
+Euromast,Lunch,Ja,Ja,Parkhaven 20,3016GM,Centrum,Rotterdam,11:00-16:00 (Alle dagen)
+Euromast,Brunch,Ja,Ja,Parkhaven 20,3016GM,Centrum,Rotterdam,10:00-12:00 (Elke zondag)
+Euromast,Tokkelen,Nee,Ja,Parkhaven 20,3016GM,Centrum,Rotterdam,11:00-17:55 (Elke laatste Zondag van de maand (mei t/m september))
+Euromast,Abseilen,Nee,Ja,Parkhaven 20,3016GM,Centrum,Rotterdam,10:00-19:00 (Elke Zaterdag en Zondag van mei t/m september)
+Kubuswoningen,Architectuur,Ja,Nee,Overblaak 70,3011MH,Centrum,Rotterdam,11:00-17:00 (Alle dagen)
+Kubuswoningen,Museum,Ja,Nee,Overblaak 70,3011MH,Centrum,Rotterdam,11:00-17:00 (Alle dagen)
+Museum Boijmans Van Beuningen,Architectuur,Ja,Nee,Museumpark 18,3015CX,Centrum,Rotterdam,11:00-17:00 (Alle dagen behalve Maandag)
+Museum Boijmans Van Beuningen,Museum,Ja,Nee,Museumpark 18,3015CX,Centrum,Rotterdam,11:00-17:00 (Alle dagen behalve Maandag)
+Erasmusbrug,Architectuur,Nee,Nee,Erasmusbrug 1,3011BN,Centrum,Rotterdam,24/7
+Kunsthal Rotterdam,Architectuur,Ja,Nee,Westzeedijk 341,3015AA,Centrum,Rotterdam,10:00-17:00 (Alle dagen behalve Maandag)
+Kunsthal Rotterdam,Museum,Ja,Nee,Westzeedijk 341,3015AA,Centrum,Rotterdam,10:00-17:00 (Alle dagen behalve Maandag)
+Wereldmuseum Rotterdam,Museum,Ja,Nee,Willenskade 25,3016DM,Centrum,Rotterdam,10:30-17:30 (Alle dagen behalve Maandag)
+Grote of Sint-Laurenskerk,Architectuur,Ja,Nee,Grotekerkplein 27,3011GC,Centrum,Rotterdam,"11.00-17.00 uur (dinsdag t/m zaterdag in april t/m oktober. november t/m maart op dinsdag, vrijdag en zaterdag) "
+Grote of Sint-Laurenskerk,Concertgebouw,Ja,Nee,Grotekerkplein 27,3011GC,Centrum,Rotterdam,"11.00-17.00 uur (dinsdag t/m zaterdag in april t/m oktober. november t/m maart op dinsdag, vrijdag en zaterdag) "
+Grote of Sint-Laurenskerk,Kerkgebouw,Ja,Nee,Grotekerkplein 27,3011GC,Centrum,Rotterdam,"11.00-17.00 uur (dinsdag t/m zaterdag in april t/m oktober. november t/m maart op dinsdag, vrijdag en zaterdag) "
+Grote of Sint-Laurenskerk,Monument,Ja,Nee,Grotekerkplein 27,3011GC,Centrum,Rotterdam,"11.00-17.00 uur (dinsdag t/m zaterdag in april t/m oktober. november t/m maart op dinsdag, vrijdag en zaterdag) "
+Diergaarde Blijdorp,Dierentuin,Nee,Nee,Blijdorplaan 8,3041JG,Blijdorpse Polder,Rotterdam,09:00-18:00 (Alle dagen)
+Witte Huis,Architectuur,Nee,Nee,Geldersekade 1,3011WB,Centrum,Rotterdam,15:00-05:00 (Maandag t/m Zaterdag geopend tijden kunnen verschillen)
+Witte Huis,Cafe,Nee,Nee,Geldersekade 1,3011WB,Centrum,Rotterdam,15:00-05:00 (Maandag t/m Zaterdag geopend tijden kunnen verschillen)
+Witte Huis,Monument,Nee,Nee,Geldersekade 1,3011WB,Centrum,Rotterdam,15:00-05:00 (Maandag t/m Zaterdag geopend tijden kunnen verschillen)
+Maritiem Museum Rotterdam,Museum,Ja,Nee,Leuvehaven 1,3011EA,Centrum,Rotterdam,10:00 - 16:00
+Nederlands Fotomuseum,Museum,Ja,Nee,"Las Palmas, Wilhelminakade 332",3072AR,Feijenoord,Rotterdam,10:00-17:00 (Dinsdag tot vrijdag) en 11:00-17:00 (Zaterdag en zondag)
+Witte de With,Architectuur,Ja ,Nee,Witte de withstraat 50,3012BR,Centrum,Rotterdam,11:00-18:00 (Dinsdag tot zondag) en 11:00-21:00 (Vrijdag)
+Witte de With,Museum,Ja ,Nee,Witte de withstraat 50,3012BR,Centrum,Rotterdam,11:00-18:00 (Dinsdag tot zondag) en 11:00-21:00 (Vrijdag)
+Van Nellefabriek,Architectuur,Ja,Nee,Van Nelleweg 1,3044BC,Spaanse Polder,Rotterdam,12:00 - 14:00 (alleen in het weekend)
+Oceanium,Dierentuin,Ja,Nee,Blijdorplaan 8,3041JG,Blijdorpse Polder,Rotterdam,09:00-18:00 (Alle dagen)
+Chabot Museum,Architectuur,Ja,Nee,Museumpark 11,3015CB,Centrum,Rotterdam,11:00-16:30 (Dinsdag tot vrijdag) en 11:00-17:00 (Zaterdag) en 12:00-17:00 (Zondag)
+Chabot Museum,Museum,Ja,Nee,Museumpark 11,3015CB,Centrum,Rotterdam,11:00-16:30 (Dinsdag tot vrijdag) en 11:00-17:00 (Zaterdag) en 12:00-17:00 (Zondag)
+De Doelen,Concertgebouw,Ja,Ja,Schouwburgplein 50,3012CL,Centrum,Rotterdam,14:00 - 18:00 (Maandag t/m Zaterdag)
+Natuurhistorische Museum Rotterdam,Museum,Ja,Nee,Westzeedijk 345,3015AA,Centrum,Rotterdam,11:00-17:00 (Dinsdag tot zondag) en 11:00-16:45 (Donderdag)
+De verwoeste stad,Monument,Nee,Nee,Plein 1940,3011EA,Centrum,Rotterdam,24/7
+Markthal,Architectuur,Ja,Nee,Dominee Jan Scharpstraat 298,3011GZ,Centrum,Rotterdam,10:00 - 20:00 (Maandag t/m Donderdag & Zaterdag) 10:00 - 21:00 (Vrijdag) 12:00 - 18:00 (Zondag)
+Markthal,Markt,Ja,Nee,Dominee Jan Scharpstraat 298,3011GZ,Centrum,Rotterdam,10:00 - 20:00 (Maandag t/m Donderdag & Zaterdag) 10:00 - 21:00 (Vrijdag) 12:00 - 18:00 (Zondag)
+Miniworld Rotterdam,Museum,Ja ,Nee,Weena 745,3013AL,Centrum,Rotterdam,12:00-17:00 (Woensdag tot vrijdag) en 10:00-17:00 (Zaterdag en zondag)
+Plaswijckpark,Attractiepark,Nee,Nee,Ringdijk 18,3053KS,Schiebroek,Rotterdam,10:00-17:00 (Alle dagen)
+Plaswijckpark,Dierentuin,Nee,Nee,Ringdijk 19,3053KS,Schiebroek,Rotterdam,10:00-17:00 (Alle dagen)
+Plaswijckpark,Park,Nee,Nee,Ringdijk 20,3053KS,Schiebroek,Rotterdam,10:00-17:00 (Alle dagen)
+Het Park,Park,Nee,Nee,"Westzeedijk/ GR, Parkkade",3016 CG,Centrum,Rotterdam,24/7 Open
+Vroesenpark,Park,Nee,Nee,Stadhoudersweg 181,3039MC,Blijdorp,Rotterdam,24/7 Open
+Oude Haven,Haven,Nee,Nee,Oude Haven,3011MG,Centrum,Rotterdam,24/7 Open
+Roel Langerakpark,Park,Nee,Nee,Roel Langerakweg 25,3041JK,Blijdorpse Polder,Rotterdam,24/7 Open
+Havenmuseum,Attractiepark,Nee,Nee,Leuvehaven 49,3011EA,Centrum,Rotterdam,24/7
+Museum Rotterdam,Museum,Ja,Nee,Rodezand 26,3011AN,Centrum,Rotterdam,10:00-17:00 (Dinsdag tot zondag)
+Veerhaven,Concertgebouw,Ja,Nee,Veerkade 15,3016DE,Centrum,Rotterdam,24/7 Open
+Huis Sonneveld,Architectuur,Ja,Nee,Jongkindstraat 12,3015CG,Centrum,Rotterdam,11:00-17:00 (Dinsdag tot zondag)
+Rijnhaven,Bos,Nee,Nee,Rijnhaven 1,3072AJ,Feijenoord,Rotterdam,24/7 Open
+Hop-on Hop-off Rotterdam B.V.,Stadstour,Nee,Ja,Van Vollenhovenstraat 15A,3016BE,Centrum,Rotterdam,10:00-17:00
+Leuvehaven,Haven,Nee,Nee,Leuvehaven 1,3011 EA,Centrum,Rotterdam,24/7
+Mariniersmuseum,Museum,Ja,Nee,Wijnhaven 11,3011WH,Centrum,Rotterdam,10:00-17:00 (Dinsdag tot vrijdag) en 11:00-17:00 (Zaterdag en zondag)
+Stadsarchief Rotterdam,Museum,Ja,Nee,Hofdijk 651,3032CG,Agniesebuurt,Rotterdam,09:00-17:00 (Dinsdag tot vrijdag)
+Belasting & Douane Museum,Museum,Ja,Nee,Parklaan 14-16,3016BB,Centrum,Rotterdam,11:00-17:00 (Dinsdag tot zondag)
+Rivierahal,Tentoonstelling,Ja,Nee,Blijdorplaan 8,3041JG,Blijdorpse Polder,Rotterdam,09:00-18:00 (Maandag tot vrijdag)
+Dutch Pinball Museum,Museum,Ja,Nee,Paul Nijghkade 19-K,3072AN,Katendrecht,Rotterdam,12:00-18:00 (Zaterdag en zondag)
+Garage Rotterdam,Tentoonstelling,Ja,Nee,Goudsewagenstraat 27,3011RH,Centrum,Rotterdam,12:30-17:30 (Woensdag tot zondag)
+Schoonoord,Park,Nee,Nee,Kievitslaan 8,3016CG,Centrum,Rotterdam,08:30-16:30 (Alle dagen)
+De Hef,Architectuur,Nee,Nee,De Hef,3071,Feijenoord,Rotterdam,24/7
+De Hef,Architectuur,Nee,Nee,De Hef,3072,Feijenoord,Rotterdam,24/7

@@ -27,14 +27,15 @@ namespace appdesign
         private void chargingbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            EOP frm = new EOP();
+            EOSkm frm = new EOSkm();
             frm.Show();
         }
 
         private void eventbtn_Click(object sender, EventArgs e)
         {
-            Form frm = new events();
-            frm.Show();
+            this.Hide();
+            TA TA = new TA();
+            TA.Show();
         }
 
         private void instructionsbtn_Click(object sender, EventArgs e)
@@ -50,6 +51,11 @@ namespace appdesign
         private void exitbtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Parkingscouting_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

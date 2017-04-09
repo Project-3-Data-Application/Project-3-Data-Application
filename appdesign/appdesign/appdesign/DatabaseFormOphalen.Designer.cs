@@ -58,88 +58,109 @@
             // Pgebied
             // 
             this.Pgebied.AutoSize = true;
-            this.Pgebied.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pgebied.BackColor = System.Drawing.Color.Transparent;
+            this.Pgebied.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pgebied.ForeColor = System.Drawing.SystemColors.Control;
             this.Pgebied.Location = new System.Drawing.Point(916, 21);
             this.Pgebied.Name = "Pgebied";
-            this.Pgebied.Size = new System.Drawing.Size(59, 16);
+            this.Pgebied.Size = new System.Drawing.Size(63, 16);
             this.Pgebied.TabIndex = 38;
-            this.Pgebied.Text = "Gebied";
+            this.Pgebied.Text = "Gebied:";
             // 
             // Pplaats
             // 
             this.Pplaats.AutoSize = true;
-            this.Pplaats.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pplaats.BackColor = System.Drawing.Color.Transparent;
+            this.Pplaats.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pplaats.ForeColor = System.Drawing.SystemColors.Control;
             this.Pplaats.Location = new System.Drawing.Point(782, 21);
             this.Pplaats.Name = "Pplaats";
-            this.Pplaats.Size = new System.Drawing.Size(52, 16);
+            this.Pplaats.Size = new System.Drawing.Size(58, 16);
             this.Pplaats.TabIndex = 37;
-            this.Pplaats.Text = "Plaats";
+            this.Pplaats.Text = "Plaats:";
             // 
             // Padres
             // 
             this.Padres.AutoSize = true;
-            this.Padres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Padres.BackColor = System.Drawing.Color.Transparent;
+            this.Padres.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Padres.ForeColor = System.Drawing.SystemColors.Control;
             this.Padres.Location = new System.Drawing.Point(568, 21);
             this.Padres.Name = "Padres";
-            this.Padres.Size = new System.Drawing.Size(49, 16);
+            this.Padres.Size = new System.Drawing.Size(55, 16);
             this.Padres.TabIndex = 36;
-            this.Padres.Text = "Adres";
+            this.Padres.Text = "Adres:";
             // 
             // aantal_zitplaatsen
             // 
             this.aantal_zitplaatsen.AutoSize = true;
-            this.aantal_zitplaatsen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aantal_zitplaatsen.BackColor = System.Drawing.Color.Transparent;
+            this.aantal_zitplaatsen.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aantal_zitplaatsen.ForeColor = System.Drawing.SystemColors.Control;
             this.aantal_zitplaatsen.Location = new System.Drawing.Point(382, 21);
             this.aantal_zitplaatsen.Name = "aantal_zitplaatsen";
-            this.aantal_zitplaatsen.Size = new System.Drawing.Size(116, 16);
+            this.aantal_zitplaatsen.Size = new System.Drawing.Size(127, 16);
             this.aantal_zitplaatsen.TabIndex = 35;
-            this.aantal_zitplaatsen.Text = "Aantal plaatsen";
+            this.aantal_zitplaatsen.Text = "Aantal plaatsen:";
             // 
             // Ptype
             // 
             this.Ptype.AutoSize = true;
-            this.Ptype.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ptype.BackColor = System.Drawing.Color.Transparent;
+            this.Ptype.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ptype.ForeColor = System.Drawing.SystemColors.Control;
             this.Ptype.Location = new System.Drawing.Point(292, 21);
             this.Ptype.Name = "Ptype";
-            this.Ptype.Size = new System.Drawing.Size(44, 16);
+            this.Ptype.Size = new System.Drawing.Size(48, 16);
             this.Ptype.TabIndex = 34;
-            this.Ptype.Text = "Type";
+            this.Ptype.Text = "Type:";
             // 
             // naam
             // 
             this.naam.AutoSize = true;
-            this.naam.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.naam.BackColor = System.Drawing.Color.Transparent;
+            this.naam.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.naam.ForeColor = System.Drawing.SystemColors.Control;
             this.naam.Location = new System.Drawing.Point(101, 21);
             this.naam.Name = "naam";
-            this.naam.Size = new System.Drawing.Size(49, 16);
+            this.naam.Size = new System.Drawing.Size(55, 16);
             this.naam.TabIndex = 32;
-            this.naam.Text = "Naam";
+            this.naam.Text = "Naam:";
             // 
             // annuleren
             // 
+            this.annuleren.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.annuleren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.annuleren.Location = new System.Drawing.Point(554, 418);
+            this.annuleren.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.annuleren.ForeColor = System.Drawing.SystemColors.Control;
+            this.annuleren.Location = new System.Drawing.Point(561, 418);
             this.annuleren.Name = "annuleren";
-            this.annuleren.Size = new System.Drawing.Size(75, 23);
+            this.annuleren.Size = new System.Drawing.Size(82, 23);
             this.annuleren.TabIndex = 30;
             this.annuleren.Text = "Vorige";
-            this.annuleren.UseVisualStyleBackColor = true;
+            this.annuleren.UseVisualStyleBackColor = false;
             this.annuleren.Click += new System.EventHandler(this.annuleren_Click);
             // 
             // ophalen
             // 
+            this.ophalen.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ophalen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ophalen.Location = new System.Drawing.Point(934, 393);
+            this.ophalen.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ophalen.ForeColor = System.Drawing.SystemColors.Control;
+            this.ophalen.Location = new System.Drawing.Point(928, 393);
             this.ophalen.Name = "ophalen";
-            this.ophalen.Size = new System.Drawing.Size(75, 50);
+            this.ophalen.Size = new System.Drawing.Size(81, 50);
             this.ophalen.TabIndex = 29;
             this.ophalen.Text = "Gegevens Ophalen";
-            this.ophalen.UseVisualStyleBackColor = true;
+            this.ophalen.UseVisualStyleBackColor = false;
             this.ophalen.Click += new System.EventHandler(this.ophalen_Click);
             // 
             // comboBox1
             // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.Control;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Parkeergarage Erasmusbrug",
@@ -173,7 +194,10 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.ForeColor = System.Drawing.SystemColors.Control;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Parkeergarage",
@@ -185,7 +209,10 @@
             // 
             // comboBox3
             // 
+            this.comboBox3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.ForeColor = System.Drawing.SystemColors.Control;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "780",
@@ -209,7 +236,10 @@
             // 
             // comboBox4
             // 
+            this.comboBox4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox4.ForeColor = System.Drawing.SystemColors.Control;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
             "Hartmansstraat 35",
@@ -234,7 +264,10 @@
             // 
             // comboBox5
             // 
+            this.comboBox5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox5.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox5.ForeColor = System.Drawing.SystemColors.Control;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
             "Rotterdam"});
@@ -246,7 +279,10 @@
             // 
             // comboBox6
             // 
+            this.comboBox6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox6.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.ForeColor = System.Drawing.SystemColors.Control;
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
             "Centrum",
@@ -263,6 +299,9 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBox1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.Control;
             this.textBox1.Location = new System.Drawing.Point(12, 67);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -272,6 +311,9 @@
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBox2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.SystemColors.Control;
             this.textBox2.Location = new System.Drawing.Point(245, 67);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -281,6 +323,9 @@
             // 
             // textBox3
             // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBox3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.SystemColors.Control;
             this.textBox3.Location = new System.Drawing.Point(405, 67);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -290,6 +335,9 @@
             // 
             // textBox4
             // 
+            this.textBox4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBox4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.ForeColor = System.Drawing.SystemColors.Control;
             this.textBox4.Location = new System.Drawing.Point(466, 67);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
@@ -299,6 +347,9 @@
             // 
             // textBox5
             // 
+            this.textBox5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBox5.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.ForeColor = System.Drawing.SystemColors.Control;
             this.textBox5.Location = new System.Drawing.Point(734, 67);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
@@ -308,6 +359,9 @@
             // 
             // textBox6
             // 
+            this.textBox6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBox6.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.ForeColor = System.Drawing.SystemColors.Control;
             this.textBox6.Location = new System.Drawing.Point(878, 67);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
@@ -317,30 +371,37 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(473, 418);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(82, 23);
             this.button1.TabIndex = 61;
             this.button1.Text = "Hoofdmenu";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(392, 418);
+            this.button2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.Control;
+            this.button2.Location = new System.Drawing.Point(385, 418);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(82, 23);
             this.button2.TabIndex = 62;
             this.button2.Text = "Afsluiten";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // DatabaseFormOphalen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::appdesign.Properties.Resources.DatabaseFormOphalen;
             this.ClientSize = new System.Drawing.Size(1021, 455);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

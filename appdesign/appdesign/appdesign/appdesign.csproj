@@ -68,11 +68,22 @@
     <Compile Include="DatabaseFormOphalen.Designer.cs">
       <DependentUpon>DatabaseFormOphalen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dataset_RotterdamDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dataset_RotterdamDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="EOP.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EOP.Designer.cs">
       <DependentUpon>EOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EOPopslaan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EOPopslaan.Designer.cs">
+      <DependentUpon>EOPopslaan.cs</DependentUpon>
     </Compile>
     <Compile Include="EOSkm.cs">
       <SubType>Form</SubType>
@@ -106,6 +117,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TA.Designer.cs">
+      <DependentUpon>TA.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="charging.resx">
       <DependentUpon>charging.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EOP.resx">
       <DependentUpon>EOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EOPopslaan.resx">
+      <DependentUpon>EOPopslaan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EOSkm.resx">
       <DependentUpon>EOSkm.cs</DependentUpon>
@@ -143,6 +163,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TA.resx">
+      <DependentUpon>TA.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Dataset_RotterdamDataSet.xsc">
+      <DependentUpon>Dataset_RotterdamDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset_RotterdamDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Dataset_RotterdamDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset_RotterdamDataSet.xss">
+      <DependentUpon>Dataset_RotterdamDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -158,6 +192,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\2e-Maasvlakte-juni-2011-No.-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DatabaseForm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EOP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EOPkm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keuzemenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DatabaseFormOphalen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EOPopslaan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TA.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

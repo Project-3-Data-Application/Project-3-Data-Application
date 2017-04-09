@@ -32,16 +32,20 @@ namespace DatabaseForm
             cnx.Open();
             NpgsqlCommand cmdCheck = new NpgsqlCommand("select * from parking where \"ADRES\" = '" + adres.Text + "' and \"PLAATS\" = '" + plaats.Text + "';", cnx);
             NpgsqlDataReader dr = cmdCheck.ExecuteReader();
+            bool boolError = false;
+            if (adres.Text == null || adres.Text == "" || adres.Text == " " || gebied.Text == null || gebied.Text == "" || gebied.Text == " " || plaats.Text == null || plaats.Text == "" || plaats.Text == " " || type.Text == null || type.Text == "" || type.Text == " " || naam.Text == null || naam.Text == "" || naam.Text == " ")
+            {
+                boolError = true;
+                MessageBox.Show("Vul alle velden correct in", "ParkingScouting", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+            }
             if (dr.Read())
             {
                 blnfound = true;
                 MessageBox.Show("Deze parkeergarage is al gerigstreerd", "LRDC", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                 dr.Close();
                 cnx.Close();
-                this.Hide();
-                Application.Exit();
             }
-            if (blnfound == false)
+            if (blnfound == false && boolError == false)
             {
                 using (var conn = new NpgsqlConnection("Server=localhost;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam"))
                 {
@@ -52,9 +56,8 @@ namespace DatabaseForm
                         cmd.CommandText = "insert into parking values('" + coordinaten.Text + "', '" + name.Text + "', '" + code.Text + "' , '" + type.Text + "' , '" + aantal_plaatsen.Text + "', '"+ adres.Text + "', '"+ plaats.Text + "', '" + gebied.Text + "');";
                         Console.WriteLine("insert into parking values('" + coordinaten.Text + "', '" + name.Text + "', '" + code.Text + "' , '" + type.Text + "' , '" + aantal_plaatsen.Text + "', '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "');"); 
                         cmd.ExecuteNonQuery();
+                        MessageBox.Show("Parkeergarage is succesvol toegevoed aan de Database", "ParkingScouting", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                         conn.Close();
-                        this.Hide();
-                        Application.Exit();
                     }
                 }
             }
