@@ -19,13 +19,15 @@ namespace appdesign
 
         private void parkingbtn_Click(object sender, EventArgs e)
         {
-            Form frm = new parking();
-            frm.Show();
+            this.Hide();
+            Keuzemenu km = new Keuzemenu();
+            km.Show();
         }
 
         private void chargingbtn_Click(object sender, EventArgs e)
         {
-            Form frm = new charging();
+            this.Hide();
+            EOP frm = new EOP();
             frm.Show();
         }
 
@@ -47,7 +49,7 @@ namespace appdesign
 
         private void exitbtn_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }

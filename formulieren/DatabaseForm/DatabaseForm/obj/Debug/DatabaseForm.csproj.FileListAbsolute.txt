@@ -24,8 +24,6 @@ C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Applic
 C:\Users\gebruiker\Documents\Visual Studio 2015\Projects\DatabaseForm\DatabaseForm\obj\Debug\DatabaseForm.DatabaseFormOphalen.resources
 C:\Users\gebruiker\Documents\Visual Studio 2015\Projects\DatabaseForm\DatabaseForm\obj\Debug\DatabaseForm.Form2.resources
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\formulieren\DatabaseForm\DatabaseForm\bin\Debug\DatabaseForm.exe.config
-C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\formulieren\DatabaseForm\DatabaseForm\obj\Debug\DatabaseForm.exe
-C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\formulieren\DatabaseForm\DatabaseForm\obj\Debug\DatabaseForm.pdb
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\formulieren\DatabaseForm\DatabaseForm\bin\Debug\DatabaseForm.exe
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\formulieren\DatabaseForm\DatabaseForm\bin\Debug\DatabaseForm.pdb
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\formulieren\DatabaseForm\DatabaseForm\bin\Debug\Npgsql.pdb
@@ -36,3 +34,5 @@ C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Applic
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\formulieren\DatabaseForm\DatabaseForm\obj\Debug\DatabaseForm.Form2.resources
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\formulieren\DatabaseForm\DatabaseForm\obj\Debug\DatabaseForm.Properties.Resources.resources
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\formulieren\DatabaseForm\DatabaseForm\obj\Debug\DatabaseForm.csproj.GenerateResource.Cache
+C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\formulieren\DatabaseForm\DatabaseForm\obj\Debug\DatabaseForm.exe
+C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\formulieren\DatabaseForm\DatabaseForm\obj\Debug\DatabaseForm.pdb

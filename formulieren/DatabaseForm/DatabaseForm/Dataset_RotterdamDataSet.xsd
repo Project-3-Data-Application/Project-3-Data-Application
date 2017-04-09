@@ -85,16 +85,7 @@
               <Mapping SourceColumn="PLAATS" DataSetColumn="PLAATS" />
               <Mapping SourceColumn="GEBIED" DataSetColumn="GEBIED" />
             </Mappings>
-            <Sources>
-              <DbSource ConnectionRef="Dataset_RotterdamConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT "COORDINATES", "NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED" FROM "public"."parking"</CommandText>
-                    <Parameters />
-                  </DbCommand>
-                </SelectCommand>
-              </DbSource>
-            </Sources>
+            <Sources />
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="touristische_attractiesTableAdapter" GeneratorDataComponentClassName="touristische_attractiesTableAdapter" Name="touristische_attracties" UserDataComponentName="touristische_attractiesTableAdapter">
             <MainSource>
@@ -136,7 +127,7 @@
   <xs:element name="Dataset_RotterdamDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Dataset_RotterdamDataSet" msprop:Generator_UserDSName="Dataset_RotterdamDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="parking" msprop:Generator_TableClassName="parkingDataTable" msprop:Generator_TableVarName="tableparking" msprop:Generator_RowChangedName="parkingRowChanged" msprop:Generator_TablePropName="parking" msprop:Generator_RowDeletingName="parkingRowDeleting" msprop:Generator_RowChangingName="parkingRowChanging" msprop:Generator_RowEvHandlerName="parkingRowChangeEventHandler" msprop:Generator_RowDeletedName="parkingRowDeleted" msprop:Generator_RowClassName="parkingRow" msprop:Generator_UserTableName="parking" msprop:Generator_RowEvArgName="parkingRowChangeEvent">
+        <xs:element name="parking" msprop:Generator_TableClassName="parkingDataTable" msprop:Generator_TableVarName="tableparking" msprop:Generator_TablePropName="parking" msprop:Generator_RowDeletingName="parkingRowDeleting" msprop:Generator_RowChangingName="parkingRowChanging" msprop:Generator_RowEvHandlerName="parkingRowChangeEventHandler" msprop:Generator_RowDeletedName="parkingRowDeleted" msprop:Generator_UserTableName="parking" msprop:Generator_RowChangedName="parkingRowChanged" msprop:Generator_RowEvArgName="parkingRowChangeEvent" msprop:Generator_RowClassName="parkingRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="COORDINATES" msprop:Generator_ColumnVarNameInTable="columnCOORDINATES" msprop:Generator_ColumnPropNameInRow="COORDINATES" msprop:Generator_ColumnPropNameInTable="COORDINATESColumn" msprop:Generator_UserColumnName="COORDINATES">
@@ -198,7 +189,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="touristische_attracties" msprop:Generator_TableClassName="touristische_attractiesDataTable" msprop:Generator_TableVarName="tabletouristische_attracties" msprop:Generator_RowChangedName="touristische_attractiesRowChanged" msprop:Generator_TablePropName="touristische_attracties" msprop:Generator_RowDeletingName="touristische_attractiesRowDeleting" msprop:Generator_RowChangingName="touristische_attractiesRowChanging" msprop:Generator_RowEvHandlerName="touristische_attractiesRowChangeEventHandler" msprop:Generator_RowDeletedName="touristische_attractiesRowDeleted" msprop:Generator_RowClassName="touristische_attractiesRow" msprop:Generator_UserTableName="touristische_attracties" msprop:Generator_RowEvArgName="touristische_attractiesRowChangeEvent">
+        <xs:element name="touristische_attracties" msprop:Generator_TableClassName="touristische_attractiesDataTable" msprop:Generator_TableVarName="tabletouristische_attracties" msprop:Generator_TablePropName="touristische_attracties" msprop:Generator_RowDeletingName="touristische_attractiesRowDeleting" msprop:Generator_RowChangingName="touristische_attractiesRowChanging" msprop:Generator_RowEvHandlerName="touristische_attractiesRowChangeEventHandler" msprop:Generator_RowDeletedName="touristische_attractiesRowDeleted" msprop:Generator_UserTableName="touristische_attracties" msprop:Generator_RowChangedName="touristische_attractiesRowChanged" msprop:Generator_RowEvArgName="touristische_attractiesRowChangeEvent" msprop:Generator_RowClassName="touristische_attractiesRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="attractie" msprop:Generator_ColumnVarNameInTable="columnattractie" msprop:Generator_ColumnPropNameInRow="attractie" msprop:Generator_ColumnPropNameInTable="attractieColumn" msprop:Generator_UserColumnName="attractie" minOccurs="0">

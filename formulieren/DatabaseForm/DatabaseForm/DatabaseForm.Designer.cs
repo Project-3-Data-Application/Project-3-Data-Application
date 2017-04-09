@@ -65,7 +65,7 @@
             this.annuleren.Name = "annuleren";
             this.annuleren.Size = new System.Drawing.Size(75, 23);
             this.annuleren.TabIndex = 12;
-            this.annuleren.Text = "annuleren";
+            this.annuleren.Text = "sluiten";
             this.annuleren.UseVisualStyleBackColor = true;
             this.annuleren.Click += new System.EventHandler(this.annuleren_Click);
             // 
@@ -158,7 +158,6 @@
             this.coordinaten.Name = "coordinaten";
             this.coordinaten.Size = new System.Drawing.Size(282, 20);
             this.coordinaten.TabIndex = 21;
-            this.coordinaten.TextChanged += new System.EventHandler(this.coordinaten_TextChanged);
             // 
             // name
             // 
