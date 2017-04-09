@@ -104,5 +104,45 @@ namespace appdesign
         {
 
         }
+
+        private void openingstijdenTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void plaats_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adres_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gebied_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

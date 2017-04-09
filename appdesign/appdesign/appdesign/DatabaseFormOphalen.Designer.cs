@@ -158,7 +158,6 @@
             // comboBox1
             // 
             this.comboBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.ForeColor = System.Drawing.SystemColors.Control;
             this.comboBox1.FormattingEnabled = true;
@@ -195,7 +194,6 @@
             // comboBox2
             // 
             this.comboBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.ForeColor = System.Drawing.SystemColors.Control;
             this.comboBox2.FormattingEnabled = true;
@@ -210,7 +208,6 @@
             // comboBox3
             // 
             this.comboBox3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.ForeColor = System.Drawing.SystemColors.Control;
             this.comboBox3.FormattingEnabled = true;
@@ -237,7 +234,6 @@
             // comboBox4
             // 
             this.comboBox4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.ForeColor = System.Drawing.SystemColors.Control;
             this.comboBox4.FormattingEnabled = true;
@@ -265,7 +261,6 @@
             // comboBox5
             // 
             this.comboBox5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox5.ForeColor = System.Drawing.SystemColors.Control;
             this.comboBox5.FormattingEnabled = true;
@@ -280,7 +275,6 @@
             // comboBox6
             // 
             this.comboBox6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox6.ForeColor = System.Drawing.SystemColors.Control;
             this.comboBox6.FormattingEnabled = true;
