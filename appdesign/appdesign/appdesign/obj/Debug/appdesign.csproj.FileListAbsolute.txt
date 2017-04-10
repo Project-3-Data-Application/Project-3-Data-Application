@@ -33,3 +33,7 @@ C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Applic
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.EOSkm.resources
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.EOPopslaan.resources
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.TA.resources
+C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\bin\Debug\Google.Maps.dll
+C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\bin\Debug\Newtonsoft.Json.dll
+C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\bin\Debug\Google.Maps.pdb
+C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\bin\Debug\Newtonsoft.Json.xml
