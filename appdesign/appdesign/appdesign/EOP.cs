@@ -35,6 +35,22 @@ namespace appdesign
                 {
                     cmd.Connection = conn;
                     cmd.CommandText = "SELECT * FROM PSA where Adres = '" + comboBox1.SelectedItem + "' or gebied = '" + comboBox2.SelectedItem + "' or plaats = '" + comboBox3.SelectedItem + "';";
+                    if (comboBox1.SelectedItem != null && comboBox2.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM PSA where Adres = '" + comboBox1.SelectedItem + "' and gebied = '" + comboBox2.SelectedItem + "' or plaats = '" + comboBox3.SelectedItem + "';";
+                    }
+                    if (comboBox1.SelectedItem != null && comboBox2.SelectedItem != null && comboBox3.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM PSA where Adres = '" + comboBox1.SelectedItem + "' and gebied = '" + comboBox2.SelectedItem + "' and plaats = '" + comboBox3.SelectedItem + "';";
+                    }
+                    if (comboBox2.SelectedItem != null && comboBox3.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM PSA where Adres = '" + comboBox1.SelectedItem + "' or gebied = '" + comboBox2.SelectedItem + "' and plaats = '" + comboBox3.SelectedItem + "';";
+                    }
+                    if (comboBox1.SelectedItem != null && comboBox3.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM PSA where Adres = '" + comboBox1.SelectedItem + "' and plaats = '" + comboBox3.SelectedItem + "' or gebied = '" + comboBox2.SelectedItem + "';";
+                    }
                     using (var reader = cmd.ExecuteReader())
                     {
                         while (reader.Read())

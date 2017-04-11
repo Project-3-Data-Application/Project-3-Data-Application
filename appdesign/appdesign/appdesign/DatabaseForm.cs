@@ -33,12 +33,12 @@ namespace DatabaseForm
             NpgsqlCommand cmdCheck = new NpgsqlCommand("select * from parking where \"ADRES\" = '" + adres.Text + "' and \"PLAATS\" = '" + plaats.Text + "';", cnx);
             NpgsqlDataReader dr = cmdCheck.ExecuteReader();
             bool boolError = false;
-            if (adres.Text == null || adres.Text == "" || adres.Text == " " || gebied.Text == null || gebied.Text == "" || gebied.Text == " " || plaats.Text == null || plaats.Text == "" || plaats.Text == " " || type.Text == null || type.Text == "" || type.Text == " " || naam.Text == null || naam.Text == "" || naam.Text == " ")
+            if (adres.Text == "" || gebied.Text == "" || plaats.Text == "" || type.Text == "" || naam.Text == "")
             {
                 boolError = true;
                 MessageBox.Show("Vul alle velden correct in", "ParkingScouting", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
             }
-            if (dr.Read())
+            if (dr.Read() && boolError == false)
             {
                 blnfound = true;
                 MessageBox.Show("Deze parkeergarage is al gerigstreerd", "LRDC", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
