@@ -58,12 +58,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="charging.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="charging.Designer.cs">
-      <DependentUpon>charging.cs</DependentUpon>
-    </Compile>
     <Compile Include="DatabaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,11 +93,12 @@
     <Compile Include="EOSkm.Designer.cs">
       <DependentUpon>EOSkm.cs</DependentUpon>
     </Compile>
-    <Compile Include="events.cs">
+    <Compile Include="Gmaps.cs" />
+    <Compile Include="gmaptest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="events.Designer.cs">
-      <DependentUpon>events.cs</DependentUpon>
+    <Compile Include="gmaptest.Designer.cs">
+      <DependentUpon>gmaptest.cs</DependentUpon>
     </Compile>
     <Compile Include="Keuzemenu.cs">
       <SubType>Form</SubType>
@@ -117,12 +112,6 @@
     <Compile Include="menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="parking.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="parking.Designer.cs">
-      <DependentUpon>parking.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TA.cs">
@@ -131,9 +120,6 @@
     <Compile Include="TA.Designer.cs">
       <DependentUpon>TA.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="charging.resx">
-      <DependentUpon>charging.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DatabaseForm.resx">
       <DependentUpon>DatabaseForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,17 +135,14 @@
     <EmbeddedResource Include="EOSkm.resx">
       <DependentUpon>EOSkm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="events.resx">
-      <DependentUpon>events.cs</DependentUpon>
+    <EmbeddedResource Include="gmaptest.resx">
+      <DependentUpon>gmaptest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Keuzemenu.resx">
       <DependentUpon>Keuzemenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="parking.resx">
-      <DependentUpon>parking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
