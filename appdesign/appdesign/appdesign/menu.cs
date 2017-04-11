@@ -57,5 +57,12 @@ namespace appdesign
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            gmaptest gmap = new gmaptest();
+            gmap.Show();
+        }
     }
 }
