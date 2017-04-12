@@ -1,44 +1,4 @@
 --
--- PostgreSQL database dump
---
-
--- Dumped from database version 9.6.1
--- Dumped by pg_dump version 9.6.1
-
--- Started on 2017-04-10 15:48:57
-
-SET statement_timeout = 0;
-SET lock_timeout = 0;
-SET idle_in_transaction_session_timeout = 0;
-SET client_encoding = 'UTF8';
-SET standard_conforming_strings = on;
-SET check_function_bodies = false;
-SET client_min_messages = warning;
-SET row_security = off;
-
-DROP DATABASE "Dataset Rotterdam";
---
--- TOC entry 2137 (class 1262 OID 86495)
--- Name: Dataset Rotterdam; Type: DATABASE; Schema: -; Owner: postgres
---
-
-CREATE DATABASE "Dataset Rotterdam" WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'English_United States.1252' LC_CTYPE = 'English_United States.1252';
-
-
-ALTER DATABASE "Dataset Rotterdam" OWNER TO postgres;
-
-\connect -reuse-previous=on "dbname='Dataset Rotterdam'"
-
-SET statement_timeout = 0;
-SET lock_timeout = 0;
-SET idle_in_transaction_session_timeout = 0;
-SET client_encoding = 'UTF8';
-SET standard_conforming_strings = on;
-SET check_function_bodies = false;
-SET client_min_messages = warning;
-SET row_security = off;
-
---
 -- TOC entry 1 (class 3079 OID 12387)
 -- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
 --
@@ -73,7 +33,9 @@ CREATE TABLE parking (
     "AANTAL_PLEKKEN" character varying(20),
     "ADRES" character varying(80) NOT NULL,
     "PLAATS" character varying(20) NOT NULL,
-    "GEBIED" character varying(50)
+    "GEBIED" character varying(50),
+    "LAT" character varying(50),
+    "LNG" character varying(50)
 );
 
 
@@ -119,29 +81,29 @@ ALTER TABLE toeristische_attracties OWNER TO postgres;
 -- Data for Name: parking; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage Erasmusbrug', 'P1', 'Parkeergarage', '327', 'Gedempte Zalmhaven', 'Rotterdam', 'Centrum');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage Schouwburgplein', 'P4', 'Parkeergarage', '730', 'Schouwburgplein 22', 'Rotterdam', 'Centrum');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage Erasmus MC', 'P15', 'Parkeergarage', ' ', 'Westzeedijk 361', 'Rotterdam', 'Centrum');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage Museumpark', 'P19', 'Parkeergarage', '1162', 'Museumpark 32', 'Rotterdam', 'Centrum');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('P + R Beverwaard', 'P37', 'P + R', '508', 'Edo Bergsmaweg 1', 'Rotterdam', 'Beverwaard');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage Weena', 'P8', 'Parkeergarage', '480', 'Karel Doormanstraat 10', 'Rotterdam', 'Centrum');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage Plaza/Casino', 'P14', 'Parkeergarage', ' ', 'Kruisstraat 13', 'Rotterdam', 'Centrum');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage Kruiskade', 'P9', 'Parkeergarage', '275', 'Kruiskade 21', 'Rotterdam', 'Centrum');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage Westblaak', 'P10', 'Parkeergarage', '780', 'Hartmansstraat 35', 'Rotterdam', 'Centrum');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage Lijnbaan', 'P7', 'Parkeergarage', '540', 'Crispijnstraat 6', 'Rotterdam', 'Centrum');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage Bijenkorf', 'P13', 'Parkeergarage', '460', 'Aert van Nesstraat 16', 'Rotterdam', 'Centrum');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage Beursplein', 'P16', 'Parkeergarage', '435', 'Bulgersteyn 5', 'Rotterdam', 'Centrum');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage WTC-V&D', 'P12', 'Parkeergarage', ' ', 'Leeuwenstraat 2', 'Rotterdam', 'Centrum');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage Oude Haven', 'P5', 'Parkeergarage', '229', 'Burgemeester van Walsumweg 718', 'Rotterdam', 'Centrum');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('P + R Kralingse Zoom', 'P42', 'P + R', '1700', 'Kralingse Zoom 50', 'Rotterdam', 'Kralingen-Oost');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage Boompjes', 'P18', 'Parkeergarage', '623', 'Terwenakker 18', 'Rotterdam', 'Centrum');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage World Port Center', 'P17', 'Parkeergarage', '505', 'Wilhelminakade 981', 'Rotterdam', 'Feijenoord');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage Zuidplein', 'P31', 'Parkeergarage', '1400', 'Twentestraat 10', 'Rotterdam', 'Zuidplein');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage Ahoy', 'P33', 'Parkeerterrein', '439', 'Montessoriweg 9', 'Rotterdam', 'Zuidplein');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('P + R Slinge benedendek', 'P30', 'P + R', '849', 'Slinge 763', 'Rotterdam', 'Pendrecht');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('P + R Alexander', 'P36', 'P + R', '473', 'Prins Alexanderlaan 35', 'Rotterdam', 'Prins Alexander');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('Parkeergarage Kiphof', 'P2', 'Parkeergarage', '339', 'Kipstraat 177', 'Rotterdam', 'Centrum');
-INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED") VALUES ('P + R Noorderhelling', 'P43', 'P + R', '322', 'Stadionweg 1', 'Rotterdam', 'Sportdorp');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage Erasmusbrug', 'P1', 'Parkeergarage', '327', 'Gedempte Zalmhaven', 'Rotterdam', 'Centrum', '51.911517', '4.482202');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage Schouwburgplein', 'P4', 'Parkeergarage', '730', 'Schouwburgplein 22', 'Rotterdam', 'Centrum', '51.921024', '4.473774');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage Erasmus MC', 'P15', 'Parkeergarage', ' ', 'Westzeedijk 361', 'Rotterdam', 'Centrum', '51.912409', '4.469217');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage Museumpark', 'P19', 'Parkeergarage', '1162', 'Museumpark 32', 'Rotterdam', 'Centrum', '51.913839', '4.470598');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('P + R Beverwaard', 'P37', 'P + R', '508', 'Edo Bergsmaweg 1', 'Rotterdam', 'Beverwaard', '51.884996', '4.566613');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage Weena', 'P8', 'Parkeergarage', '480', 'Karel Doormanstraat 10', 'Rotterdam', 'Centrum', '51.923644', '4.473850');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage Plaza/Casino', 'P14', 'Parkeergarage', ' ', 'Kruisstraat 13', 'Rotterdam', 'Centrum', '51.923254', '4.472708');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage Kruiskade', 'P9', 'Parkeergarage', '275', 'Kruiskade 21', 'Rotterdam', 'Centrum', '51.924022', '4.475997');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage Westblaak', 'P10', 'Parkeergarage', '780', 'Hartmansstraat 35', 'Rotterdam', 'Centrum', '51.916563', '4.477941');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage Lijnbaan', 'P7', 'Parkeergarage', '540', 'Crispijnstraat 6', 'Rotterdam', 'Centrum', '51.919337', '4.476716');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage Bijenkorf', 'P13', 'Parkeergarage', '460', 'Aert van Nesstraat 16', 'Rotterdam', 'Centrum', '51.921360', '4.477752');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage Beursplein', 'P16', 'Parkeergarage', '435', 'Bulgersteyn 5', 'Rotterdam', 'Centrum', '51.919215', '4.481495');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage WTC-V&D', 'P12', 'Parkeergarage', ' ', 'Leeuwenstraat 2', 'Rotterdam', 'Centrum', '51.921326', '4.482278');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage Oude Haven', 'P5', 'Parkeergarage', '229', 'Burgemeester van Walsumweg 718', 'Rotterdam', 'Centrum', '51.921760', '4.493038');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('P + R Kralingse Zoom', 'P42', 'P + R', '1700', 'Kralingse Zoom 50', 'Rotterdam', 'Kralingen-Oost', '51.920780', '4.533032');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage Boompjes', 'P18', 'Parkeergarage', '623', 'Terwenakker 18', 'Rotterdam', 'Centrum', '51.914917', '4.485498');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage World Port Center', 'P17', 'Parkeergarage', '505', 'Wilhelminakade 981', 'Rotterdam', 'Feijenoord', '51.905603', '4.484499');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage Zuidplein', 'P31', 'Parkeergarage', '1400', 'Twentestraat 10', 'Rotterdam', 'Zuidplein', '51.888303', '4.490973');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage Ahoy', 'P33', 'Parkeerterrein', '439', 'Montessoriweg 9', 'Rotterdam', 'Zuidplein', '51.886259', '4.494321');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('P + R Slinge benedendek', 'P30', 'P + R', '849', 'Slinge 763', 'Rotterdam', 'Pendrecht', '51.874620', '4.477534');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('P + R Alexander', 'P36', 'P + R', '473', 'Prins Alexanderlaan 35', 'Rotterdam', 'Prins Alexander', '51.953118', '4.550017');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('Parkeergarage Kiphof', 'P2', 'Parkeergarage', '339', 'Kipstraat 177', 'Rotterdam', 'Centrum', '51.922614', '4.492289');
+INSERT INTO parking ("NAME", "CODE", "TYPE", "AANTAL_PLEKKEN", "ADRES", "PLAATS", "GEBIED", "LAT","LNG") VALUES ('P + R Noorderhelling', 'P43', 'P + R', '322', 'Stadionweg 1', 'Rotterdam', 'Sportdorp', '51.895846', '4.534412');
 
 
 --

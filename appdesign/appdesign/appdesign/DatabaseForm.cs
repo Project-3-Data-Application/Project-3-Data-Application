@@ -28,17 +28,17 @@ namespace DatabaseForm
         private void opslaan_Click(object sender, EventArgs e)
         {
             bool blnfound = false;
-            NpgsqlConnection cnx = new NpgsqlConnection("Server=127.0.0.1;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam");
+            NpgsqlConnection cnx = new NpgsqlConnection("Server=127.0.0.1;Port=5432; User Id=postgres;Password=a8mD1n7;Database=Dataset Rotterdam");
             cnx.Open();
             NpgsqlCommand cmdCheck = new NpgsqlCommand("select * from parking where \"ADRES\" = '" + adres.Text + "' and \"PLAATS\" = '" + plaats.Text + "';", cnx);
             NpgsqlDataReader dr = cmdCheck.ExecuteReader();
             bool boolError = false;
-            if (adres.Text == null || adres.Text == "" || adres.Text == " " || gebied.Text == null || gebied.Text == "" || gebied.Text == " " || plaats.Text == null || plaats.Text == "" || plaats.Text == " " || type.Text == null || type.Text == "" || type.Text == " " || naam.Text == null || naam.Text == "" || naam.Text == " ")
+            if (adres.Text == "" || gebied.Text == "" || plaats.Text == "" || type.Text == "" || naam.Text == "")
             {
                 boolError = true;
                 MessageBox.Show("Vul alle velden correct in", "ParkingScouting", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
             }
-            if (dr.Read())
+            if (dr.Read() && boolError == false)
             {
                 blnfound = true;
                 MessageBox.Show("Deze parkeergarage is al gerigstreerd", "LRDC", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);

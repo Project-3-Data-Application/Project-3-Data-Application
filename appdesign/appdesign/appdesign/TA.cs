@@ -32,13 +32,93 @@ namespace appdesign
                 tatb.Clear();
                 gebied.Clear();
                 openingstijdenTB.Clear();
-                using (var conn = new NpgsqlConnection("Server=localhost;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam"))
+                using (var conn = new NpgsqlConnection("Server=localhost;Port=5432; User Id=postgres;Password=a8mD1n7;Database=Dataset Rotterdam"))
                 {
                     conn.Open();
                     using (var cmd = new NpgsqlCommand())
                     {
                         cmd.Connection = conn;
                         cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' or gebied = '" + GebiedCB.SelectedItem + "' or Onderwerp = '" + TACB.SelectedItem + "' or Bedekt = '" + BedektCB.SelectedItem + "' or Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' or plaats = '" + PlaatsCB.SelectedItem + "';";
+                        if (BedektCB.SelectedItem != null && ReserverenCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' or gebied = '" + GebiedCB.SelectedItem + "' or Onderwerp = '" + TACB.SelectedItem + "' or Bedekt = '" + BedektCB.SelectedItem + "' and Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' or plaats = '" + PlaatsCB.SelectedItem + "';";
+                        }
+                        if (BedektCB.SelectedItem != null && TACB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' or gebied = '" + GebiedCB.SelectedItem + "' or Onderwerp = '" + TACB.SelectedItem + "' and Bedekt = '" + BedektCB.SelectedItem + "' or Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' or plaats = '" + PlaatsCB.SelectedItem + "';";
+                        }
+                        if (BedektCB.SelectedItem != null && TACB.SelectedItem != null && ReserverenCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' or gebied = '" + GebiedCB.SelectedItem + "' or Onderwerp = '" + TACB.SelectedItem + "' and Bedekt = '" + BedektCB.SelectedItem + "' and Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' or plaats = '" + PlaatsCB.SelectedItem + "';";
+                        }
+                        if (BedektCB.SelectedItem != null && TACB.SelectedItem != null && ReserverenCB.SelectedItem != null && GebiedCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' or gebied = '" + GebiedCB.SelectedItem + "' and Onderwerp = '" + TACB.SelectedItem + "' and Bedekt = '" + BedektCB.SelectedItem + "' and Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' or plaats = '" + PlaatsCB.SelectedItem + "';";
+                        }
+                        if (BedektCB.SelectedItem != null && TACB.SelectedItem != null && ReserverenCB.SelectedItem != null && GebiedCB.SelectedItem != null && PlaatsCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' or gebied = '" + GebiedCB.SelectedItem + "' and Onderwerp = '" + TACB.SelectedItem + "' and Bedekt = '" + BedektCB.SelectedItem + "' and Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' and plaats = '" + PlaatsCB.SelectedItem + "';";
+                        }
+                        if (AttractieCB.SelectedItem != null && BedektCB.SelectedItem != null && TACB.SelectedItem != null && ReserverenCB.SelectedItem != null && GebiedCB.SelectedItem != null && PlaatsCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' and gebied = '" + GebiedCB.SelectedItem + "' and Onderwerp = '" + TACB.SelectedItem + "' and Bedekt = '" + BedektCB.SelectedItem + "' and Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' and plaats = '" + PlaatsCB.SelectedItem + "';";
+                        }
+                        if (AttractieCB.SelectedItem != null && BedektCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' and Bedekt = '" + BedektCB.SelectedItem + "' or gebied = '" + GebiedCB.SelectedItem + "' or Onderwerp = '" + TACB.SelectedItem + "' or Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' or plaats = '" + PlaatsCB.SelectedItem + "';";
+                        }
+                        if (AttractieCB.SelectedItem != null && BedektCB.SelectedItem != null && ReserverenCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' and Bedekt = '" + BedektCB.SelectedItem + "' and Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' or gebied = '" + GebiedCB.SelectedItem + "' or Onderwerp = '" + TACB.SelectedItem + "' or plaats = '" + PlaatsCB.SelectedItem + "';";
+                        }
+                        if (AttractieCB.SelectedItem != null && BedektCB.SelectedItem != null && TACB.SelectedItem != null && ReserverenCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' and Onderwerp = '" + TACB.SelectedItem + "' and Bedekt = '" + BedektCB.SelectedItem + "' and Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' or gebied = '" + GebiedCB.SelectedItem + "' or plaats = '" + PlaatsCB.SelectedItem + "';";
+                        }
+                        if (AttractieCB.SelectedItem != null && BedektCB.SelectedItem != null && TACB.SelectedItem != null && ReserverenCB.SelectedItem != null && GebiedCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' and Onderwerp = '" + TACB.SelectedItem + "' and Bedekt = '" + BedektCB.SelectedItem + "' and Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' and gebied = '" + GebiedCB.SelectedItem + "' or plaats = '" + PlaatsCB.SelectedItem + "';";
+                        }
+                        if (AttractieCB.SelectedItem != null && BedektCB.SelectedItem != null && TACB.SelectedItem != null && ReserverenCB.SelectedItem != null && GebiedCB.SelectedItem != null && PlaatsCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' and Onderwerp = '" + TACB.SelectedItem + "' and Bedekt = '" + BedektCB.SelectedItem + "' and Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' and gebied = '" + GebiedCB.SelectedItem + "' or plaats = '" + PlaatsCB.SelectedItem + "';";
+                        }
+                        if (TACB.SelectedItem != null && ReserverenCB.SelectedItem != null && GebiedCB.SelectedItem != null && PlaatsCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' or Bedekt = '" + BedektCB.SelectedItem + "' or gebied = '" + GebiedCB.SelectedItem + "' and Onderwerp = '" + TACB.SelectedItem + "' and Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' and plaats = '" + PlaatsCB.SelectedItem + "';";
+                        }
+                        if (TACB.SelectedItem != null && ReserverenCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' or Bedekt = '" + BedektCB.SelectedItem + "' or gebied = '" + GebiedCB.SelectedItem + "' or Onderwerp = '" + TACB.SelectedItem + "' and Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' or plaats = '" + PlaatsCB.SelectedItem + "';";
+                        }
+                        if (TACB.SelectedItem != null && ReserverenCB.SelectedItem != null && PlaatsCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' or Bedekt = '" + BedektCB.SelectedItem + "' or gebied = '" + GebiedCB.SelectedItem + "' or Onderwerp = '" + TACB.SelectedItem + "' and Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' and plaats = '" + PlaatsCB.SelectedItem + "';";
+                        }
+                        if (TACB.SelectedItem != null && GebiedCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' or plaats = '" + PlaatsCB.SelectedItem + "' or Bedekt = '" + BedektCB.SelectedItem + "' or gebied = '" + GebiedCB.SelectedItem + "' and Onderwerp = '" + TACB.SelectedItem + "' or Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "';";
+                        }
+                        if (GebiedCB.SelectedItem != null && ReserverenCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' or plaats = '" + PlaatsCB.SelectedItem + "' or Bedekt = '" + BedektCB.SelectedItem + "' or gebied = '" + GebiedCB.SelectedItem + "' and Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' or Onderwerp = '" + TACB.SelectedItem + "';";
+                        }
+                        if (PlaatsCB.SelectedItem != null && ReserverenCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' or gebied = '" + GebiedCB.SelectedItem + "' or Bedekt = '" + BedektCB.SelectedItem + "' or Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' and plaats = '" + PlaatsCB.SelectedItem + "' or Onderwerp = '" + TACB.SelectedItem + "';";
+                        }
+                        if (PlaatsCB.SelectedItem != null && GebiedCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' or Bedekt = '" + BedektCB.SelectedItem + "' or Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' or plaats = '" + PlaatsCB.SelectedItem + "' and gebied = '" + GebiedCB.SelectedItem + "' or Onderwerp = '" + TACB.SelectedItem + "';";
+                        }
+                        if (PlaatsCB.SelectedItem != null && GebiedCB.SelectedItem != null && ReserverenCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' or Bedekt = '" + BedektCB.SelectedItem + "' or Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' and plaats = '" + PlaatsCB.SelectedItem + "' and gebied = '" + GebiedCB.SelectedItem + "' or Onderwerp = '" + TACB.SelectedItem + "';";
+                        }
+                        if (BedektCB.SelectedItem != null && GebiedCB.SelectedItem != null)
+                        {
+                            cmd.CommandText = "SELECT * FROM Toeristische_Attracties where Toeristische_Attractie = '" + AttractieCB.SelectedItem + "' or Bedekt = '" + BedektCB.SelectedItem + "' and gebied = '" + GebiedCB.SelectedItem + "' or Reserveren_verplicht = '" + ReserverenCB.SelectedItem + "' or plaats = '" + PlaatsCB.SelectedItem + "' or Onderwerp = '" + TACB.SelectedItem + "';";
+                        }
                         using (var reader = cmd.ExecuteReader())
                         {
                             while (reader.Read())

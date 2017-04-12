@@ -26,13 +26,82 @@ namespace DatabaseForm
             textBox4.Clear();
             textBox5.Clear();
             textBox6.Clear();
-            using (var conn = new NpgsqlConnection("Server=localhost;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam"))
+            using (var conn = new NpgsqlConnection("Server=localhost;Port=5432; User Id=postgres;Password=a8mD1n7;Database=Dataset Rotterdam"))
             {
                 conn.Open();
                 using (var cmd = new NpgsqlCommand())
                 {
                     cmd.Connection = conn;
                     cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' or \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                    if (comboBox1.SelectedItem != null && comboBox2.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' or \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                    }
+                    if (comboBox1.SelectedItem != null && comboBox3.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                    }
+                    if (comboBox1.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' and \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                    }
+                    if (comboBox1.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox2.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                    }
+                    if (comboBox1.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox2.SelectedItem != null && comboBox5.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"TYPE\" = '" + comboBox2.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                    }
+                    if (comboBox1.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox2.SelectedItem != null && comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"TYPE\" = '" + comboBox2.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' and \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                    }
+                    if (comboBox2.SelectedItem != null && comboBox3.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' and \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                    }
+                    if (comboBox2.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' and \"TYPE\" = '" + comboBox2.SelectedItem + "' and \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                    }
+                    if (comboBox2.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox5.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' and \"TYPE\" = '" + comboBox2.SelectedItem + "' and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                    }
+                    if (comboBox2.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' and \"TYPE\" = '" + comboBox2.SelectedItem + "' and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' and \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                    }
+                    if (comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' and \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                    }
+                    if (comboBox3.SelectedItem != null && comboBox4.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' and \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                    }
+                    if (comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox5.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                    }
+                    if (comboBox4.SelectedItem != null && comboBox5.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' or \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                    }
+                    if (comboBox4.SelectedItem != null && comboBox6.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' or \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"GEBIED\" = '" + comboBox6.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "';";
+                    }
+                    if (comboBox4.SelectedItem != null && comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' or \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"GEBIED\" = '" + comboBox6.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "';";
+
+                    }
+                    if (comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
+                    {
+                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' and \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "';";
+                    }
                     using (var reader = cmd.ExecuteReader())
                     {
                         while (reader.Read())

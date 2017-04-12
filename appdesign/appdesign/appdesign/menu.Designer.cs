@@ -34,6 +34,7 @@
             this.chargingbtn = new System.Windows.Forms.Button();
             this.eventbtn = new System.Windows.Forms.Button();
             this.exitbtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // instructionsbtn
@@ -120,6 +121,20 @@
             this.exitbtn.UseVisualStyleBackColor = false;
             this.exitbtn.Click += new System.EventHandler(this.exitbtn_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(247, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "gmaptest";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Parkingscouting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -127,6 +142,7 @@
             this.BackgroundImage = global::appdesign.Properties.Resources.menu1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(334, 361);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.exitbtn);
             this.Controls.Add(this.eventbtn);
             this.Controls.Add(this.chargingbtn);
@@ -148,6 +164,7 @@
         private System.Windows.Forms.Button chargingbtn;
         private System.Windows.Forms.Button eventbtn;
         private System.Windows.Forms.Button exitbtn;
+        private System.Windows.Forms.Button button1;
     }
 }
 
