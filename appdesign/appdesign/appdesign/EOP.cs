@@ -28,7 +28,7 @@ namespace appdesign
             textBox1.Clear();
             textBox2.Clear();
             textBox3.Clear();
-            using (var conn = new NpgsqlConnection("Server=localhost;Port=5432; User Id=postgres;Password=a8mD1n7;Database=Dataset Rotterdam"))
+            using (var conn = new NpgsqlConnection("Server=localhost;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam"))
             {
                 conn.Open();
                 using (var cmd = new NpgsqlCommand())
