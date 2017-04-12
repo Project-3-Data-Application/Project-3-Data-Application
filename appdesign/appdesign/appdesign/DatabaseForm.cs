@@ -28,7 +28,7 @@ namespace DatabaseForm
         private void opslaan_Click(object sender, EventArgs e)
         {
             bool blnfound = false;
-            NpgsqlConnection cnx = new NpgsqlConnection("Server=127.0.0.1;Port=5432; User Id=postgres;Password=a8mD1n7;Database=Dataset Rotterdam");
+            NpgsqlConnection cnx = new NpgsqlConnection("Server=127.0.0.1;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam");
             cnx.Open();
             NpgsqlCommand cmdCheck = new NpgsqlCommand("select * from parking where \"ADRES\" = '" + adres.Text + "' and \"PLAATS\" = '" + plaats.Text + "';", cnx);
             NpgsqlDataReader dr = cmdCheck.ExecuteReader();

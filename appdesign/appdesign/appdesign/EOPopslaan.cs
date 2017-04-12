@@ -47,7 +47,7 @@ namespace appdesign
         private void button1_Click(object sender, EventArgs e)
         {
             bool blnfound = false;
-            NpgsqlConnection cnx = new NpgsqlConnection("Server=127.0.0.1;Port=5432; User Id=postgres;Password=a8mD1n7;Database=Dataset Rotterdam");
+            NpgsqlConnection cnx = new NpgsqlConnection("Server=127.0.0.1;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam");
             cnx.Open();
             NpgsqlCommand cmdCheck = new NpgsqlCommand("select * from PSA where adres = '" + adres_EOPopslaan.Text + "' and gebied = '" + gebied_EOPopslaan.Text + "' and plaats = '" + Plaats_EOPopslaan.Text + "';", cnx);
             NpgsqlDataReader dr = cmdCheck.ExecuteReader();

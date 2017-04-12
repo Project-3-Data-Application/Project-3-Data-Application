@@ -17,10 +17,7 @@ C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Applic
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\bin\Debug\appdesign.exe
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\bin\Debug\appdesign.pdb
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.csprojResolveAssemblyReference.cache
-C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.charging.resources
-C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.events.resources
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.Parkingscouting.resources
-C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.parking.resources
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.Properties.Resources.resources
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.csproj.GenerateResource.Cache
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\bin\Debug\Npgsql.dll
@@ -59,3 +56,4 @@ C:\Users\Z\Dropbox\School\HRO Jaar 2\Project3\appdesign\appdesign\obj\Debug\appd
 C:\Users\Z\Dropbox\School\HRO Jaar 2\Project3\appdesign\appdesign\obj\Debug\appdesign.TA.resources
 C:\Users\Z\Dropbox\School\HRO Jaar 2\Project3\appdesign\appdesign\obj\Debug\appdesign.csproj.GenerateResource.Cache
 C:\Users\Z\Dropbox\School\HRO Jaar 2\Project3\appdesign\appdesign\obj\Debug\appdesign.gmaptest.resources
+C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.gmaptest.resources
