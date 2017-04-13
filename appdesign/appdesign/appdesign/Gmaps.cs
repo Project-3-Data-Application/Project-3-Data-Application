@@ -1,4 +1,4 @@
-﻿//GMAPS API (https://github.com/ericnewton76/gmaps-api-net) | Class by Ziggy
+﻿//GMAPS API (https://github.com/ericnewton76/gmaps-api-net) | Class by Ziggy | 0.2
 using System;
 using Google.Maps;
 using Google.Maps.StaticMaps;
@@ -32,12 +32,40 @@ namespace appdesign
             //Add the marker
             map.Markers.Add(new LatLng(lat, lng));
 
-            //string actual = map.ToUri().Query;
-            //Console.WriteLine(actual);
-            //StringAssert.Contains("markers=52.0077271,-4.3496006&", actual);
-
             //returns the full image with the given parameters
             return map.ToUri().ToString();
+        }
+
+        //Direct link to the location, goes to google.com/maps site
+        public String getGoogleMapsLink(String street, String city = "Rotterdam", String postcode = "", String country = "Nederland")
+        {
+
+            //start of the link to google maps
+            String pre = "https://www.google.com/maps/place";          
+
+            //looks for spaces to replace with + as google does
+            street = street.Replace(' ', '+');
+            city = city.Replace(' ', '+');
+            country = country.Replace(' ', '+');
+
+            String link = "";
+
+            if (postcode != "" && postcode != null)
+            {
+                //replaces spaces with +
+                postcode = postcode.Replace(' ', '+');
+
+                //formats it all together in one string (pre/street,postcode+city,county)
+                link = String.Format("{0}/{1},{2}+{3},{4}", pre, street, postcode, city, country);
+            }
+            else
+            {
+                //formats it all together in one string (pre/street,city,county)
+                link = String.Format("{0}/{1},{2},{3}", pre, street, city, country);
+            }
+
+            Console.WriteLine(link);
+            return link;
         }
     }
 }

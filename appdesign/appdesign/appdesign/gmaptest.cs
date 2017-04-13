@@ -35,6 +35,7 @@ namespace appdesign
             //Recieving data and show an Google Map image
             Gmaps gm = new Gmaps();
             pictureBox1.ImageLocation = gm.getGoogleMap("Buitenwatersloot 102, Delft", 52.0077271, 4.3496006);
+            gm.getGoogleMapsLink("Schouwburgplein 22");
         }
         private void events_FormClosing(object sender, FormClosingEventArgs e)
         {
