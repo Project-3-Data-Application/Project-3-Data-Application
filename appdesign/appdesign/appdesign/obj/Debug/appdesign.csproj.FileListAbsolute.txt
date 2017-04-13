@@ -57,3 +57,6 @@ C:\Users\Z\Dropbox\School\HRO Jaar 2\Project3\appdesign\appdesign\obj\Debug\appd
 C:\Users\Z\Dropbox\School\HRO Jaar 2\Project3\appdesign\appdesign\obj\Debug\appdesign.csproj.GenerateResource.Cache
 C:\Users\Z\Dropbox\School\HRO Jaar 2\Project3\appdesign\appdesign\obj\Debug\appdesign.gmaptest.resources
 C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.gmaptest.resources
+C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\obj\Debug\appdesign.Grafiek_parkeergarages.resources
+C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\bin\Debug\Database1.mdf
+C:\Users\gebruiker\Documents\Informatica\project\Project 3\Project-3-Data-Application\appdesign\appdesign\appdesign\bin\Debug\Database1_log.ldf

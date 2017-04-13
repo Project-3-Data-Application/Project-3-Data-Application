@@ -96,7 +96,6 @@ namespace DatabaseForm
                     if (comboBox4.SelectedItem != null && comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
                     {
                         cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" = '" + comboBox3.SelectedItem + "' or \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"GEBIED\" = '" + comboBox6.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "';";
-
                     }
                     if (comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
                     {
@@ -157,6 +156,13 @@ namespace DatabaseForm
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            appdesign.Grafiek_parkeergarages GP = new appdesign.Grafiek_parkeergarages();
+            GP.Show();
         }
     }
 }

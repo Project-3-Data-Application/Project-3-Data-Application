@@ -123,6 +123,16 @@ namespace appdesign.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Grafiek {
+            get {
+                object obj = ResourceManager.GetObject("Grafiek", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Keuzemenu {
             get {
                 object obj = ResourceManager.GetObject("Keuzemenu", resourceCulture);
