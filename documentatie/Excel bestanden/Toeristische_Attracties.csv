@@ -1,4 +1,4 @@
-Toeristische_attractie,Onderwerp,Bedekt,Reserveren_verplicht,Adres,Postcode,Gebied,Plaats,Tijden
+toeristische_attractie,onderwerp,bedekt,reserveren_verplicht,adres,postcode,gebied,plaats,tijden
 Euromast,High Tea,Ja,Ja,Parkhaven 20,3016GM,Centrum,Rotterdam,10:00-16:00 
 Euromast,Diner,Ja,Ja,Parkhaven 20,3016GM,Centrum,Rotterdam,16:00-23:00 
 Euromast,Lunch,Ja,Ja,Parkhaven 20,3016GM,Centrum,Rotterdam,11:00-16:00 
@@ -21,19 +21,19 @@ Diergaarde Blijdorp,Dierentuin,Nee,Nee,Blijdorplaan 8,3041JG,Blijdorpse Polder,R
 Witte Huis,Architectuur,Nee,Nee,Geldersekade 1,3011WB,Centrum,Rotterdam,15:00-05:00*
 Witte Huis,Cafe,Nee,Nee,Geldersekade 1,3011WB,Centrum,Rotterdam,15:00-05:00*
 Witte Huis,Monument,Nee,Nee,Geldersekade 1,3011WB,Centrum,Rotterdam,15:00-05:00*
-Maritiem Museum Rotterdam,Museum,Ja,Nee,Leuvehaven 1,3011EA,Centrum,Rotterdam,10:00 - 16:00
+Maritiem Museum Rotterdam,Museum,Ja,Nee,Leuvehaven 1,3011EA,Centrum,Rotterdam,10:00-16:00
 Nederlands Fotomuseum,Museum,Ja,Nee,"Las Palmas, Wilhelminakade 332",3072AR,Feijenoord,Rotterdam,10:00-17:00*
 Witte de With,Architectuur,Ja ,Nee,Witte de withstraat 50,3012BR,Centrum,Rotterdam,11:00-18:00*
 Witte de With,Museum,Ja ,Nee,Witte de withstraat 50,3012BR,Centrum,Rotterdam,11:00-18:00*
-Van Nellefabriek,Architectuur,Ja,Nee,Van Nelleweg 1,3044BC,Spaanse Polder,Rotterdam,12:00 - 14:00*
+Van Nellefabriek,Architectuur,Ja,Nee,Van Nelleweg 1,3044BC,Spaanse Polder,Rotterdam,12:00-14:00*
 Oceanium,Dierentuin,Ja,Nee,Blijdorplaan 8,3041JG,Blijdorpse Polder,Rotterdam,09:00-18:00*
 Chabot Museum,Architectuur,Ja,Nee,Museumpark 11,3015CB,Centrum,Rotterdam,11:00-16:30*
 Chabot Museum,Museum,Ja,Nee,Museumpark 11,3015CB,Centrum,Rotterdam,11:00-16:30*
-De Doelen,Concertgebouw,Ja,Ja,Schouwburgplein 50,3012CL,Centrum,Rotterdam,14:00 - 18:00*
+De Doelen,Concertgebouw,Ja,Ja,Schouwburgplein 50,3012CL,Centrum,Rotterdam,14:00-18:00*
 Natuurhistorische Museum Rotterdam,Museum,Ja,Nee,Westzeedijk 345,3015AA,Centrum,Rotterdam,11:00-17:00*
 De verwoeste stad,Monument,Nee,Nee,Plein 1940,3011EA,Centrum,Rotterdam,24/7 Open
-Markthal,Architectuur,Ja,Nee,Dominee Jan Scharpstraat 298,3011GZ,Centrum,Rotterdam,10:00 - 20:00*
-Markthal,Markt,Ja,Nee,Dominee Jan Scharpstraat 298,3011GZ,Centrum,Rotterdam,10:00 - 20:00*
+Markthal,Architectuur,Ja,Nee,Dominee Jan Scharpstraat 298,3011GZ,Centrum,Rotterdam,10:00-20:00*
+Markthal,Markt,Ja,Nee,Dominee Jan Scharpstraat 298,3011GZ,Centrum,Rotterdam,10:00-20:00*
 Miniworld Rotterdam,Museum,Ja ,Nee,Weena 745,3013AL,Centrum,Rotterdam,12:00-17:00*
 Plaswijckpark,Attractiepark,Nee,Nee,Ringdijk 18,3053KS,Schiebroek,Rotterdam,10:00-17:00
 Plaswijckpark,Dierentuin,Nee,Nee,Ringdijk 19,3053KS,Schiebroek,Rotterdam,10:00-17:00

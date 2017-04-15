@@ -56,6 +56,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.openingstijdenTB = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.OpeningCB = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -64,7 +66,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(386, 8);
+            this.label1.Location = new System.Drawing.Point(238, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 16);
             this.label1.TabIndex = 0;
@@ -76,7 +78,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(526, 8);
+            this.label2.Location = new System.Drawing.Point(378, 8);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 16);
             this.label2.TabIndex = 1;
@@ -88,7 +90,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(899, 8);
+            this.label3.Location = new System.Drawing.Point(751, 8);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 16);
             this.label3.TabIndex = 2;
@@ -101,7 +103,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(799, 8);
+            this.label4.Location = new System.Drawing.Point(651, 8);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 16);
             this.label4.TabIndex = 3;
@@ -113,7 +115,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(970, 8);
+            this.label5.Location = new System.Drawing.Point(829, 8);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(171, 16);
             this.label5.TabIndex = 4;
@@ -130,9 +132,9 @@
             this.ReserverenCB.Items.AddRange(new object[] {
             "Ja",
             "Nee"});
-            this.ReserverenCB.Location = new System.Drawing.Point(1011, 27);
+            this.ReserverenCB.Location = new System.Drawing.Point(863, 27);
             this.ReserverenCB.Name = "ReserverenCB";
-            this.ReserverenCB.Size = new System.Drawing.Size(76, 21);
+            this.ReserverenCB.Size = new System.Drawing.Size(108, 21);
             this.ReserverenCB.TabIndex = 5;
             // 
             // BedektCB
@@ -146,7 +148,7 @@
             this.BedektCB.Items.AddRange(new object[] {
             "Ja",
             "Nee"});
-            this.BedektCB.Location = new System.Drawing.Point(802, 27);
+            this.BedektCB.Location = new System.Drawing.Point(654, 27);
             this.BedektCB.Name = "BedektCB";
             this.BedektCB.Size = new System.Drawing.Size(52, 21);
             this.BedektCB.TabIndex = 6;
@@ -170,7 +172,7 @@
             "Centrum",
             "Feijenoord",
             ""});
-            this.GebiedCB.Location = new System.Drawing.Point(860, 27);
+            this.GebiedCB.Location = new System.Drawing.Point(712, 27);
             this.GebiedCB.Name = "GebiedCB";
             this.GebiedCB.Size = new System.Drawing.Size(145, 21);
             this.GebiedCB.TabIndex = 7;
@@ -191,7 +193,6 @@
             "Brunch",
             "Tokkelen",
             "Abseilen",
-            "Cultuur",
             "Kerkgebouw",
             "Cafe",
             "Monument",
@@ -206,7 +207,7 @@
             "Tentoonstelling",
             "Park",
             "Architectuur"});
-            this.TACB.Location = new System.Drawing.Point(512, 27);
+            this.TACB.Location = new System.Drawing.Point(364, 27);
             this.TACB.Name = "TACB";
             this.TACB.Size = new System.Drawing.Size(156, 21);
             this.TACB.TabIndex = 8;
@@ -261,7 +262,7 @@
             "Garage Rotterdam",
             "Schoonoord",
             "De Hef"});
-            this.AttractieCB.Location = new System.Drawing.Point(338, 27);
+            this.AttractieCB.Location = new System.Drawing.Point(190, 27);
             this.AttractieCB.Name = "AttractieCB";
             this.AttractieCB.Size = new System.Drawing.Size(168, 21);
             this.AttractieCB.TabIndex = 9;
@@ -340,7 +341,7 @@
             this.PlaatsCB.FormattingEnabled = true;
             this.PlaatsCB.Items.AddRange(new object[] {
             "Rotterdam"});
-            this.PlaatsCB.Location = new System.Drawing.Point(674, 27);
+            this.PlaatsCB.Location = new System.Drawing.Point(526, 27);
             this.PlaatsCB.Name = "PlaatsCB";
             this.PlaatsCB.Size = new System.Drawing.Size(122, 21);
             this.PlaatsCB.TabIndex = 16;
@@ -352,7 +353,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.Control;
-            this.label11.Location = new System.Drawing.Point(706, 8);
+            this.label11.Location = new System.Drawing.Point(558, 8);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(61, 16);
             this.label11.TabIndex = 15;
@@ -501,12 +502,64 @@
             this.label13.TabIndex = 28;
             this.label13.Text = "*Openingstijden kunnen afwijken a.d.h.v. de dag/maand.";
             // 
+            // OpeningCB
+            // 
+            this.OpeningCB.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.OpeningCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.OpeningCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OpeningCB.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OpeningCB.ForeColor = System.Drawing.SystemColors.Control;
+            this.OpeningCB.FormattingEnabled = true;
+            this.OpeningCB.Items.AddRange(new object[] {
+            "12:00-14:00",
+            "10:00-12:00",
+            "11:00-16:00",
+            "10:00-16:00",
+            "11:00-16:30",
+            "08:30-16:30",
+            "12:00-17:00",
+            "11:00-17:00",
+            "10:00-17:00",
+            "09:00-17:00",
+            "12:30-17:30",
+            "10:30-17:30",
+            "11:00-17:55",
+            "14:00-18:00",
+            "12:00-18:00",
+            "11:00-18:00",
+            "09:00-18:00",
+            "10:00-19:00",
+            "10:00-20:00",
+            "16:00-23:00",
+            "15:00-05:00",
+            "24/7 Open"});
+            this.OpeningCB.Location = new System.Drawing.Point(977, 27);
+            this.OpeningCB.Name = "OpeningCB";
+            this.OpeningCB.Size = new System.Drawing.Size(168, 21);
+            this.OpeningCB.TabIndex = 30;
+            this.OpeningCB.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.Control;
+            this.label14.Location = new System.Drawing.Point(1005, 8);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(126, 16);
+            this.label14.TabIndex = 29;
+            this.label14.Text = "Openingstijden:";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
+            // 
             // TA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::appdesign.Properties.Resources.TA;
             this.ClientSize = new System.Drawing.Size(1299, 507);
+            this.Controls.Add(this.OpeningCB);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.openingstijdenTB);
             this.Controls.Add(this.label12);
@@ -572,5 +625,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox openingstijdenTB;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox OpeningCB;
+        private System.Windows.Forms.Label label14;
     }
 }

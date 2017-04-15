@@ -200,6 +200,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Parkeergarage",
+            "Parkeerterrein",
             "P + R"});
             this.comboBox2.Location = new System.Drawing.Point(245, 40);
             this.comboBox2.Name = "comboBox2";
