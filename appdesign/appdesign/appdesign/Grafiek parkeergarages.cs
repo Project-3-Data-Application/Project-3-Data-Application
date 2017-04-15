@@ -58,7 +58,7 @@ namespace appdesign
                     using (var cmd = new NpgsqlCommand())
                     {
                         cmd.Connection = conn;
-                        cmd.CommandText = cmd.CommandText = "select distinct \"GEBIED\" from parking;";
+                        cmd.CommandText = cmd.CommandText = "select distinct gebied from parking;";
                         using (var reader = cmd.ExecuteReader())
                         {
                             while (reader.Read())
@@ -69,8 +69,8 @@ namespace appdesign
                                     using (var cmds = new NpgsqlCommand())
                                     {
                                         cmds.Connection = connx;
-                                        cmds.CommandText = "select count(\"GEBIED\") from parking where \"GEBIED\" = '" + reader.GetString(0) + "';";
-                                        Console.WriteLine("select count(\"GEBIED\") from parking where \"NAME\" = '" + reader.GetString(0) + "';");
+                                        cmds.CommandText = "select count(gebied) from parking where gebied = '" + reader.GetString(0) + "';";
+                                        Console.WriteLine("select count(gebied) from parking where name = '" + reader.GetString(0) + "';");
                                         using (var readers = cmds.ExecuteReader())
                                         {
                                             while (readers.Read())
@@ -113,8 +113,8 @@ namespace appdesign
                                     using (var cmds = new NpgsqlCommand())
                                     {
                                         cmds.Connection = connx;
-                                        cmds.CommandText = "select \"AANTAL_PLEKKEN\" from parking where \"AANTAL_PLEKKEN\" = '" + reader.GetString(3) + "';";
-                                        Console.WriteLine("select \"AANTAL_PLEKKEN\" from parking where \"AANTAL_PLEKKEN\" = '" + reader.GetString(3) + "';");
+                                        cmds.CommandText = "select aantal_plekken from parking where aantal_plekken = '" + reader.GetString(3) + "';";
+                                        Console.WriteLine("select aantal_plekken from parking where aantal_plekken = '" + reader.GetString(3) + "';");
                                         using (var readers = cmds.ExecuteReader())
                                         {
                                             while (readers.Read())

@@ -34,74 +34,74 @@ namespace DatabaseForm
                     cmd.Connection = conn;
                     if (comboBox3.SelectedItem != null)
                     {
-                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "or \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                        cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + "or adres = '" + comboBox4.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         if (comboBox1.SelectedItem != null && comboBox2.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "or \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' and type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + "or adres = '" + comboBox4.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox1.SelectedItem != null && comboBox3.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' and aantal_plekken =" + comboBox3.SelectedItem + "or type = '" + comboBox2.SelectedItem + "' or adres = '" + comboBox4.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox1.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "and \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' and aantal_plekken =" + comboBox3.SelectedItem + "and adres = '" + comboBox4.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox1.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox2.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' and aantal_plekken =" + comboBox3.SelectedItem + "and adres = '" + comboBox4.SelectedItem + "' and type = '" + comboBox2.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox1.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox2.SelectedItem != null && comboBox5.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"TYPE\" = '" + comboBox2.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' and aantal_plekken =" + comboBox3.SelectedItem + "and adres = '" + comboBox4.SelectedItem + "' and type = '" + comboBox2.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox1.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox2.SelectedItem != null && comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"TYPE\" = '" + comboBox2.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' and \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' and aantal_plekken =" + comboBox3.SelectedItem + "and adres = '" + comboBox4.SelectedItem + "' and type = '" + comboBox2.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "' and gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox2.SelectedItem != null && comboBox3.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "and \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + "and type = '" + comboBox2.SelectedItem + "' or adres = '" + comboBox4.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox2.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "and \"TYPE\" = '" + comboBox2.SelectedItem + "' and \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + "and type = '" + comboBox2.SelectedItem + "' and adres = '" + comboBox4.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox2.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox5.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "and \"TYPE\" = '" + comboBox2.SelectedItem + "' and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + "and type = '" + comboBox2.SelectedItem + "' and adres = '" + comboBox4.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox2.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "and \"TYPE\" = '" + comboBox2.SelectedItem + "' and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' and \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + "and type = '" + comboBox2.SelectedItem + "' and adres = '" + comboBox4.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "' and gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' and \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + "and adres = '" + comboBox4.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "' and gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox3.SelectedItem != null && comboBox4.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "and \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + "and adres = '" + comboBox4.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox5.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + "and adres = '" + comboBox4.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox4.SelectedItem != null && comboBox5.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "or \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + "or adres = '" + comboBox4.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox4.SelectedItem != null && comboBox6.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "or \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"GEBIED\" = '" + comboBox6.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + "or adres = '" + comboBox4.SelectedItem + "' and gebied = '" + comboBox6.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "';";
                         }
                         if (comboBox4.SelectedItem != null && comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "or \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"GEBIED\" = '" + comboBox6.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + "or adres = '" + comboBox4.SelectedItem + "' and gebied = '" + comboBox6.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "';";
                         }
                         if (comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + "and \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + "and adres = '" + comboBox4.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "';";
                         }
                         using (var reader = cmd.ExecuteReader())
                         {
@@ -124,74 +124,74 @@ namespace DatabaseForm
                     }
                     else
                     {
-                        cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + 0 +"or \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                        cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + 0 +"or adres = '" + comboBox4.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         if (comboBox1.SelectedItem != null && comboBox2.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + 0 +"or \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' and type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + 0 +"or adres = '" + comboBox4.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox1.SelectedItem != null && comboBox3.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + 0 +"or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' and aantal_plekken =" + comboBox3.SelectedItem + 0 +"or type = '" + comboBox2.SelectedItem + "' or adres = '" + comboBox4.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox1.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + 0 +"and \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' and aantal_plekken =" + comboBox3.SelectedItem + 0 +"and adres = '" + comboBox4.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox1.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox2.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + 0 +"and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' and aantal_plekken =" + comboBox3.SelectedItem + 0 +"and adres = '" + comboBox4.SelectedItem + "' and type = '" + comboBox2.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox1.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox2.SelectedItem != null && comboBox5.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + 0 +"and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"TYPE\" = '" + comboBox2.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' and aantal_plekken =" + comboBox3.SelectedItem + 0 +"and adres = '" + comboBox4.SelectedItem + "' and type = '" + comboBox2.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox1.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox2.SelectedItem != null && comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' and \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + 0 +"and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"TYPE\" = '" + comboBox2.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' and \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' and aantal_plekken =" + comboBox3.SelectedItem + 0 +"and adres = '" + comboBox4.SelectedItem + "' and type = '" + comboBox2.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "' and gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox2.SelectedItem != null && comboBox3.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + 0 +"and \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + 0 +"and type = '" + comboBox2.SelectedItem + "' or adres = '" + comboBox4.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox2.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + 0 +"and \"TYPE\" = '" + comboBox2.SelectedItem + "' and \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + 0 +"and type = '" + comboBox2.SelectedItem + "' and adres = '" + comboBox4.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox2.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox5.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + 0 +"and \"TYPE\" = '" + comboBox2.SelectedItem + "' and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + 0 +"and type = '" + comboBox2.SelectedItem + "' and adres = '" + comboBox4.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox2.SelectedItem != null && comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + 0 +"and \"TYPE\" = '" + comboBox2.SelectedItem + "' and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' and \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + 0 +"and type = '" + comboBox2.SelectedItem + "' and adres = '" + comboBox4.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "' and gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" =‘“ + comboBox3.SelectedItem + “‘and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' and \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken ='" + comboBox3.SelectedItem + "'and adres = '" + comboBox4.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "' and gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox3.SelectedItem != null && comboBox4.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + 0 +"and \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + 0 +"and adres = '" + comboBox4.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox3.SelectedItem != null && comboBox4.SelectedItem != null && comboBox5.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + 0 +"and \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + 0 +"and adres = '" + comboBox4.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox4.SelectedItem != null && comboBox5.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\' ='" + comboBox3.SelectedItem + "'or \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken ='" + comboBox3.SelectedItem + "'or adres = '" + comboBox4.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
                         }
                         if (comboBox4.SelectedItem != null && comboBox6.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + 0 +"or \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"GEBIED\" = '" + comboBox6.SelectedItem + "' or \"PLAATS\" = '" + comboBox5.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + 0 +"or adres = '" + comboBox4.SelectedItem + "' and gebied = '" + comboBox6.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "';";
                         }
                         if (comboBox4.SelectedItem != null && comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + 0 +"or \"ADRES\" = '" + comboBox4.SelectedItem + "' and \"GEBIED\" = '" + comboBox6.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + 0 +"or adres = '" + comboBox4.SelectedItem + "' and gebied = '" + comboBox6.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "';";
                         }
                         if (comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
                         {
-                            cmd.CommandText = "SELECT * FROM parking where \"NAME\" = '" + comboBox1.SelectedItem + "' or \"TYPE\" = '" + comboBox2.SelectedItem + "' or \"AANTAL_PLEKKEN\" =" + comboBox3.SelectedItem + 0 +"and \"ADRES\" = '" + comboBox4.SelectedItem + "' or \"GEBIED\" = '" + comboBox6.SelectedItem + "' and \"PLAATS\" = '" + comboBox5.SelectedItem + "';";
+                            cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + 0 +"and adres = '" + comboBox4.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "';";
                         }
                         using (var reader = cmd.ExecuteReader())
                         {

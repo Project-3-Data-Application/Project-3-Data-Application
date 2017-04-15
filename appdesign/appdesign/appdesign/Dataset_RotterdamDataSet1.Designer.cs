@@ -2037,8 +2037,8 @@ namespace appdesign.Dataset_RotterdamDataSet1TableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_GEBIED", global::System.Data.Odbc.OdbcType.NVarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "GEBIED", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.Odbc.OdbcCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO \"Dataset Rotterdam\".\"public\".\"parking\" (\"NAME\", \"CODE\", \"TYPE\", \"AANT" +
-                "AL_PLEKKEN\", \"ADRES\", \"PLAATS\", \"GEBIED\") VALUES (?, ?, ?, ?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO \"Dataset Rotterdam\".\"public\".\"parking\" (adres, \"CODE\", type, \"AANT" +
+                "AL_PLEKKEN\", adres, adres, gebied) VALUES (?, ?, ?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("NAME", global::System.Data.Odbc.OdbcType.NVarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NAME", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CODE", global::System.Data.Odbc.OdbcType.NVarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CODE", global::System.Data.DataRowVersion.Current, false, null));
@@ -2084,7 +2084,7 @@ namespace appdesign.Dataset_RotterdamDataSet1TableAdapters {
             this._commandCollection = new global::System.Data.Odbc.OdbcCommand[1];
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT \"NAME\", \"CODE\", \"TYPE\", \"AANTAL_PLEKKEN\", \"ADRES\", \"PLAATS\", \"GEBIED\" FROM" +
+            this._commandCollection[0].CommandText = "SELECT adres, \"CODE\", type, aantal_plekken, adres, adres, gebied FROM" +
                 " \"public\".\"parking\"";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
@@ -2517,15 +2517,15 @@ namespace appdesign.Dataset_RotterdamDataSet1TableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.Odbc.OdbcCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM \"Dataset Rotterdam\".\"public\".\"psa\" WHERE ((\"plaats\" = ?) AND (\"gebied" +
-                "\" = ?) AND (\"adres\" = ?))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM \"Dataset Rotterdam\".\"public\".\"psa\" WHERE ((adres = ?) AND (\"gebied" +
+                "\" = ?) AND (adres = ?))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_plaats", global::System.Data.Odbc.OdbcType.NVarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "plaats", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_gebied", global::System.Data.Odbc.OdbcType.NVarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gebied", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_adres", global::System.Data.Odbc.OdbcType.NVarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "adres", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.Odbc.OdbcCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO \"Dataset Rotterdam\".\"public\".\"psa\" (\"plaats\", \"gebied\", \"adres\") VALU" +
+            this._adapter.InsertCommand.CommandText = "INSERT INTO \"Dataset Rotterdam\".\"public\".\"psa\" (adres, gebied, adres) VALU" +
                 "ES (?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("plaats", global::System.Data.Odbc.OdbcType.NVarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "plaats", global::System.Data.DataRowVersion.Current, false, null));
@@ -2533,8 +2533,8 @@ namespace appdesign.Dataset_RotterdamDataSet1TableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("adres", global::System.Data.Odbc.OdbcType.NVarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "adres", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.Odbc.OdbcCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE \"Dataset Rotterdam\".\"public\".\"psa\" SET \"plaats\" = ?, \"gebied\" = ?, \"adres\"" +
-                " = ? WHERE ((\"plaats\" = ?) AND (\"gebied\" = ?) AND (\"adres\" = ?))";
+            this._adapter.UpdateCommand.CommandText = "UPDATE \"Dataset Rotterdam\".\"public\".\"psa\" SET adres = ?, gebied = ?, adres" +
+                " = ? WHERE ((adres = ?) AND (gebied = ?) AND (adres = ?))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("plaats", global::System.Data.Odbc.OdbcType.NVarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "plaats", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("gebied", global::System.Data.Odbc.OdbcType.NVarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gebied", global::System.Data.DataRowVersion.Current, false, null));
@@ -2557,7 +2557,7 @@ namespace appdesign.Dataset_RotterdamDataSet1TableAdapters {
             this._commandCollection = new global::System.Data.Odbc.OdbcCommand[1];
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT \"plaats\", \"gebied\", \"adres\" FROM \"public\".\"psa\"";
+            this._commandCollection[0].CommandText = "SELECT adres, gebied, adres FROM \"public\".\"psa\"";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -2910,8 +2910,8 @@ namespace appdesign.Dataset_RotterdamDataSet1TableAdapters {
             this._adapter.InsertCommand = new global::System.Data.Odbc.OdbcCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO \"Dataset Rotterdam\".\"public\".\"toeristische_attracties\" (\"toeristische" +
-                "_attractie\", \"onderwerp\", \"bedekt\", \"reserveren_verplicht\", \"adres\", \"postcode\"," +
-                " \"gebied\", \"plaats\", \"tijden\") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                "_attractie\", \"onderwerp\", \"bedekt\", \"reserveren_verplicht\", adres, \"postcode\"," +
+                " gebied, adres, \"tijden\") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("toeristische_attractie", global::System.Data.Odbc.OdbcType.NVarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "toeristische_attractie", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("onderwerp", global::System.Data.Odbc.OdbcType.NVarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "onderwerp", global::System.Data.DataRowVersion.Current, false, null));
@@ -2965,7 +2965,7 @@ namespace appdesign.Dataset_RotterdamDataSet1TableAdapters {
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT \"toeristische_attractie\", \"onderwerp\", \"bedekt\", \"reserveren_verplicht\", \"" +
-                "adres\", \"postcode\", \"gebied\", \"plaats\", \"tijden\" FROM \"public\".\"toeristische_att" +
+                "adres\", \"postcode\", gebied, adres, \"tijden\" FROM \"public\".\"toeristische_att" +
                 "racties\"";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }

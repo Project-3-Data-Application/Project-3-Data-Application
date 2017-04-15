@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
-using System.Timers;
 
 
 namespace DatabaseForm
@@ -30,7 +29,7 @@ namespace DatabaseForm
             bool blnfound = false;
             NpgsqlConnection cnx = new NpgsqlConnection("Server=127.0.0.1;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam");
             cnx.Open();
-            NpgsqlCommand cmdCheck = new NpgsqlCommand("select * from parking where \"ADRES\" = '" + adres.Text + "' and \"PLAATS\" = '" + plaats.Text + "';", cnx);
+            NpgsqlCommand cmdCheck = new NpgsqlCommand("select * from parking where adres = '" + adres.Text + "' and adres = '" + plaats.Text + "';", cnx);
             NpgsqlDataReader dr = cmdCheck.ExecuteReader();
             bool boolError = false;
             if (adres.Text == "" || gebied.Text == "" || plaats.Text == "" || type.Text == "" || naam.Text == "")
