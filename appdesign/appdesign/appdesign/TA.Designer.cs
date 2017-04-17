@@ -588,6 +588,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "TA";
             this.Text = "TA";
             this.ResumeLayout(false);

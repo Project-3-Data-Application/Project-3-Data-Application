@@ -282,6 +282,7 @@
             this.Controls.Add(this.annuleren);
             this.Controls.Add(this.ophalen);
             this.Controls.Add(this.Toevoegen);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "opslaan";
             this.Load += new System.EventHandler(this.Form1_Load);

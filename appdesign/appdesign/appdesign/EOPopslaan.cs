@@ -20,8 +20,6 @@ namespace appdesign
 
         private void EOPopslaan_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dataset_RotterdamDataSet.psa' table. You can move, or remove it, as needed.
-            this.psaTableAdapter.Fill(this.dataset_RotterdamDataSet.psa);
 
         }
 

@@ -149,6 +149,7 @@
             this.Controls.Add(this.parkingbtn);
             this.Controls.Add(this.creditsbtn);
             this.Controls.Add(this.instructionsbtn);
+            this.MaximizeBox = false;
             this.Name = "Parkingscouting";
             this.Text = "Parkingscouting";
             this.Load += new System.EventHandler(this.Parkingscouting_Load);

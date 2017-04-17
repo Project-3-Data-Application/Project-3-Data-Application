@@ -25,8 +25,7 @@ namespace appdesign
 
         private void Grafiek_parkeergarages_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dataset_RotterdamDataSet1.parking' table. You can move, or remove it, as needed.
-            this.parkingTableAdapter.Fill(this.dataset_RotterdamDataSet1.parking);
+
 
         }
 

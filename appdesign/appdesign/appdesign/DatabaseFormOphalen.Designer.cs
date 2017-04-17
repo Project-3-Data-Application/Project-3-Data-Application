@@ -287,7 +287,8 @@
             "Zuidplein",
             "Pendrecht",
             "Prins Alexander",
-            "Sportdorp"});
+            "Sportdorp",
+            "IJsselmonde"});
             this.comboBox6.Location = new System.Drawing.Point(985, 40);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(131, 21);
@@ -436,6 +437,7 @@
             this.Controls.Add(this.naam);
             this.Controls.Add(this.annuleren);
             this.Controls.Add(this.ophalen);
+            this.MaximizeBox = false;
             this.Name = "DatabaseFormOphalen";
             this.Text = "DatabaseFormOphalen";
             this.Load += new System.EventHandler(this.DatabaseFormOphalen_Load);
