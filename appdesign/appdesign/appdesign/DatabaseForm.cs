@@ -29,7 +29,7 @@ namespace DatabaseForm
             bool blnfound = false;
             NpgsqlConnection cnx = new NpgsqlConnection("Server=127.0.0.1;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam");
             cnx.Open();
-            NpgsqlCommand cmdCheck = new NpgsqlCommand("select * from parking where adres = '" + adres.Text + "' and adres = '" + plaats.Text + "';", cnx);
+            NpgsqlCommand cmdCheck = new NpgsqlCommand("select * from parking where adres = '" + adres.Text + "' and name = '" + name.Text + "' and gebied = '" + gebied.Text + "' and type = '" + type.Text + "' and plaats = '" +  plaats.Text + "';", cnx);
             NpgsqlDataReader dr = cmdCheck.ExecuteReader();
             bool boolError = false;
             if (adres.Text == "" || gebied.Text == "" || plaats.Text == "" || type.Text == "" || naam.Text == "")
@@ -46,7 +46,7 @@ namespace DatabaseForm
             }
             if (blnfound == false && boolError == false)
             {
-                if (aantal_plaatsen.Text != "")
+                if (aantal_plaatsen.Text == "" && textBox2.Text == "" && Longit.Text == "")
                 {
                     using (var conn = new NpgsqlConnection("Server=localhost;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam"))
                     {
@@ -54,8 +54,104 @@ namespace DatabaseForm
                         using (var cmd = new NpgsqlCommand())
                         {
                             cmd.Connection = conn;
-                            cmd.CommandText = "insert into parking values('" + name.Text + "', '" + code.Text + "' , '" + type.Text + "' , " + aantal_plaatsen.Text + ", '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "');";
-                            Console.WriteLine("insert into parking values('" + name.Text + "', '" + code.Text + "' , '" + type.Text + "' , '" + aantal_plaatsen.Text + "', '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "');");
+                            cmd.CommandText = "insert into parking values('" + name.Text + "', '"  + type.Text + "' , " + aantal_plaatsen.Text + 0 + ", '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "', " + textBox2.Text + 0.0 + ", " + Longit.Text + 0.0 + ");";
+                            Console.WriteLine("insert into parking values('" + name.Text + "', '"  + type.Text + "' , '" + aantal_plaatsen.Text + "', '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "', '" + textBox2.Text + "', '" + Longit.Text + "');");
+                            cmd.ExecuteNonQuery();
+                            MessageBox.Show("Parkeergarage is succesvol toegevoed aan de Database", "ParkingScouting", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                            conn.Close();
+                        }
+                    }
+                }
+                if (aantal_plaatsen.Text == "")
+                {
+                    using (var conn = new NpgsqlConnection("Server=localhost;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam"))
+                    {
+                        conn.Open();
+                        using (var cmd = new NpgsqlCommand())
+                        {
+                            cmd.Connection = conn;
+                            cmd.CommandText = "insert into parking values('" + name.Text + "', '"  + type.Text + "' , " + aantal_plaatsen.Text + 0 + ", '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "', " + textBox2.Text + ", " + Longit.Text + ");";
+                            Console.WriteLine("insert into parking values('" + name.Text + "', '"  + type.Text + "' , '" + aantal_plaatsen.Text + "', '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "', '" + textBox2.Text + "', '" + Longit.Text + "');");
+                            cmd.ExecuteNonQuery();
+                            MessageBox.Show("Parkeergarage is succesvol toegevoed aan de Database", "ParkingScouting", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                            conn.Close();
+                        }
+                    }
+                }
+                if (textBox2.Text == "")
+                {
+                    using (var conn = new NpgsqlConnection("Server=localhost;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam"))
+                    {
+                        conn.Open();
+                        using (var cmd = new NpgsqlCommand())
+                        {
+                            cmd.Connection = conn;
+                            cmd.CommandText = "insert into parking values('" + name.Text + "', '"  + type.Text + "' , " + aantal_plaatsen.Text + ", '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "', " + textBox2.Text + 0.0 + ", " + Longit.Text + ");";
+                            Console.WriteLine("insert into parking values('" + name.Text + "', '"  + type.Text + "' , '" + aantal_plaatsen.Text + "', '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "', '" + textBox2.Text + "', '" + Longit.Text + "');");
+                            cmd.ExecuteNonQuery();
+                            MessageBox.Show("Parkeergarage is succesvol toegevoed aan de Database", "ParkingScouting", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                            conn.Close();
+                        }
+                    }
+                }
+                if (Longit.Text == "")
+                {
+                    using (var conn = new NpgsqlConnection("Server=localhost;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam"))
+                    {
+                        conn.Open();
+                        using (var cmd = new NpgsqlCommand())
+                        {
+                            cmd.Connection = conn;
+                            cmd.CommandText = "insert into parking values('" + name.Text + "', '"  + type.Text + "' , " + aantal_plaatsen.Text + ", '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "', " + textBox2.Text + ", " + Longit.Text + 0.0 + ");";
+                            Console.WriteLine("insert into parking values('" + name.Text + "', '"  + type.Text + "' , '" + aantal_plaatsen.Text + "', '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "', '" + textBox2.Text + "', '" + Longit.Text + "');");
+                            cmd.ExecuteNonQuery();
+                            MessageBox.Show("Parkeergarage is succesvol toegevoed aan de Database", "ParkingScouting", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                            conn.Close();
+                        }
+                    }
+                }
+                if (textBox2.Text == "" && Longit.Text == "")
+                {
+                    using (var conn = new NpgsqlConnection("Server=localhost;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam"))
+                    {
+                        conn.Open();
+                        using (var cmd = new NpgsqlCommand())
+                        {
+                            cmd.Connection = conn;
+                            cmd.CommandText = "insert into parking values('" + name.Text + "', '"  + type.Text + "' , " + aantal_plaatsen.Text + ", '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "', " + textBox2.Text + 0.0 + ", " + Longit.Text + 0.0 + ");";
+                            Console.WriteLine("insert into parking values('" + name.Text + "', '"  + type.Text + "' , '" + aantal_plaatsen.Text + "', '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "', '" + textBox2.Text + "', '" + Longit.Text + "');");
+                            cmd.ExecuteNonQuery();
+                            MessageBox.Show("Parkeergarage is succesvol toegevoed aan de Database", "ParkingScouting", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                            conn.Close();
+                        }
+                    }
+                }
+                if (textBox2.Text == "" && aantal_plaatsen.Text == "")
+                {
+                    using (var conn = new NpgsqlConnection("Server=localhost;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam"))
+                    {
+                        conn.Open();
+                        using (var cmd = new NpgsqlCommand())
+                        {
+                            cmd.Connection = conn;
+                            cmd.CommandText = "insert into parking values('" + name.Text + "', '"  + type.Text + "' , " + aantal_plaatsen.Text + 0 + ", '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "', '" + textBox2.Text + 0.0 + ", " + Longit.Text + ");";
+                            Console.WriteLine("insert into parking values('" + name.Text + "', '"  + type.Text + "' , '" + aantal_plaatsen.Text + 0 + ", '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "', '" + textBox2.Text + "', '" + Longit.Text + "');");
+                            cmd.ExecuteNonQuery();
+                            MessageBox.Show("Parkeergarage is succesvol toegevoed aan de Database", "ParkingScouting", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                            conn.Close();
+                        }
+                    }
+                }
+                if (Longit.Text == "" && aantal_plaatsen.Text == "")
+                {
+                    using (var conn = new NpgsqlConnection("Server=localhost;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam"))
+                    {
+                        conn.Open();
+                        using (var cmd = new NpgsqlCommand())
+                        {
+                            cmd.Connection = conn;
+                            cmd.CommandText = "insert into parking values('" + name.Text + "', '"  + type.Text + "' , " + aantal_plaatsen.Text + 0 + ", '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "', " + textBox2.Text + ", " + Longit.Text + 0.0 + ");";
+                            Console.WriteLine("insert into parking values('" + name.Text + "', '"  + type.Text + "' , '" + aantal_plaatsen.Text + "', '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "', '" + textBox2.Text + "', '" + Longit.Text + "');");
                             cmd.ExecuteNonQuery();
                             MessageBox.Show("Parkeergarage is succesvol toegevoed aan de Database", "ParkingScouting", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                             conn.Close();
@@ -70,8 +166,8 @@ namespace DatabaseForm
                         using (var cmd = new NpgsqlCommand())
                         {
                             cmd.Connection = conn;
-                            cmd.CommandText = "insert into parking values('" + name.Text + "', '" + code.Text + "' , '" + type.Text + "' , " + aantal_plaatsen.Text + 0 + ", '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "');";
-                            Console.WriteLine("insert into parking values('" + name.Text + "', '" + code.Text + "' , '" + type.Text + "' , '" + aantal_plaatsen.Text + "', '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "');");
+                            cmd.CommandText = "insert into parking values('" + name.Text + "', '"  + type.Text + "' , " + aantal_plaatsen.Text + ", '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "', " + textBox2.Text + ", " + Longit.Text + ");";
+                            Console.WriteLine("insert into parking values('" + name.Text + "', '"  + type.Text + "' , " + aantal_plaatsen.Text + ", '" + adres.Text + "', '" + plaats.Text + "', '" + gebied.Text + "', " + textBox2.Text + ", " + Longit.Text + ");");
                             cmd.ExecuteNonQuery();
                             MessageBox.Show("Parkeergarage is succesvol toegevoed aan de Database", "ParkingScouting", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                             conn.Close();
@@ -80,7 +176,6 @@ namespace DatabaseForm
                 }
             }
         }
-
         private void annuleren_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -124,6 +219,11 @@ namespace DatabaseForm
             this.Close();
             appdesign.Parkingscouting PS = new appdesign.Parkingscouting();
             PS.Show();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

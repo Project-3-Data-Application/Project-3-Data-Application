@@ -20,18 +20,23 @@ namespace DatabaseForm
 
         private void ophalen_Click(object sender, EventArgs e)
         {
+            /*Hierdoor worden alle textboxen leeggehaald bij een volgende zoekopdracht*/
             textBox1.Clear();
             textBox2.Clear();
             textBox3.Clear();
             textBox4.Clear();
             textBox5.Clear();
             textBox6.Clear();
+            /*Een connectie maken met de database van postgres*/
             using (var conn = new NpgsqlConnection("Server=localhost;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam"))
             {
+                /*Connectie openen*/
                 conn.Open();
+                /*Een Command definieren in postgres*/
                 using (var cmd = new NpgsqlCommand())
                 {
                     cmd.Connection = conn;
+                    /*Hierdoor worden verschillende comboboxitems gecombineerd*/
                     if (comboBox3.SelectedItem != null)
                     {
                         cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + "or adres = '" + comboBox4.SelectedItem + "' or plaats = '" + comboBox5.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "';";
@@ -103,10 +108,13 @@ namespace DatabaseForm
                         {
                             cmd.CommandText = "SELECT * FROM parking where name = '" + comboBox1.SelectedItem + "' or type = '" + comboBox2.SelectedItem + "' or aantal_plekken =" + comboBox3.SelectedItem + "and adres = '" + comboBox4.SelectedItem + "' or gebied = '" + comboBox6.SelectedItem + "' and plaats = '" + comboBox5.SelectedItem + "';";
                         }
+                        /*De readerfunctie definieren voor de command die gegeven is voor postgreSQL*/
                         using (var reader = cmd.ExecuteReader())
                         {
+                            /*Waarden van de tabellen in postgres worden opgehaald*/
                             while (reader.Read())
                             {
+                                /*De opgehaalde waarden vanuit postgreSQL worden in de te*/
                                 textBox1.Text += reader.GetString(0) + "\r\n";
                                 textBox2.Text += reader.GetString(2) + "\r\n";
                                 textBox3.Text += reader.GetString(3) + "\r\n";

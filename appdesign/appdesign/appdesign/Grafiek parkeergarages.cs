@@ -35,6 +35,7 @@ namespace appdesign
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            /*De huidige formulier word gesloten bij het drukken van de knop "Sluiten"*/
             this.Close();
         }
 
@@ -46,17 +47,23 @@ namespace appdesign
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             {
+                /*Alle openstaande grafieken worden gesloten en onzichtbaar gemaakt bij het selecteren van de button "Aantal parkeergarages per gebied"*/
                 PGgrafiek.Series["Aantal parkeergarages"].Points.Clear();
                 PGgrafiek.Visible = false;
                 chart1.Series["Aantal plaatsen"].Points.Clear();
                 chart1.Visible = false;
 
+                /*De connectie naar de database in PostgreSQL word gedefinieerd"*/
                 using (var conn = new NpgsqlConnection("Server=localhost;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam"))
                 {
+                    /*De gedefinieerde connectie word geopend"*/
                     conn.Open();
+                    /*De command word gedefinieerd*/
                     using (var cmd = new NpgsqlCommand())
                     {
+                        /*De command die zal worden gegeven zal worden uitgevoerd in de Database waar een connectie mee is gemaakt*/
                         cmd.Connection = conn;
+
                         cmd.CommandText = cmd.CommandText = "select distinct gebied from parking;";
                         using (var reader = cmd.ExecuteReader())
                         {
