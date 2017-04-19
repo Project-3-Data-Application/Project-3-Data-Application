@@ -163,6 +163,56 @@ namespace appdesign.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap menu2 {
+            get {
+                object obj = ResourceManager.GetObject("menu2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Project_3_Icoon1_55 {
+            get {
+                object obj = ResourceManager.GetObject("Project 3 Icoon1.55", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Project_3_Icoon1_555 {
+            get {
+                object obj = ResourceManager.GetObject("Project 3 Icoon1.555", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Project_3_Icoon11 {
+            get {
+                object obj = ResourceManager.GetObject("Project 3 Icoon11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Project3Icoon1_44 {
+            get {
+                object obj = ResourceManager.GetObject("Project3Icoon1.44", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap recycled_texture_background_by_sandeep_m_d6aeau9_PZ9chud {
             get {
                 object obj = ResourceManager.GetObject("recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud", resourceCulture);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TA));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -58,6 +59,8 @@
             this.listBox6 = new System.Windows.Forms.ListBox();
             this.OpeningCB = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -565,12 +568,24 @@
             this.label14.TabIndex = 70;
             this.label14.Text = "Openingstijden:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::appdesign.Properties.Resources.Project_3_Icoon1_555;
+            this.pictureBox1.InitialImage = global::appdesign.Properties.Resources.Project3Icoon1_44;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(99, 86);
+            this.pictureBox1.TabIndex = 72;
+            this.pictureBox1.TabStop = false;
+            // 
             // TA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::appdesign.Properties.Resources.TA;
             this.ClientSize = new System.Drawing.Size(1299, 510);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.OpeningCB);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.listBox6);
@@ -601,8 +616,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TA";
-            this.Text = "TA";
+            this.Text = "ParkScouting";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -640,5 +657,6 @@
         private System.Windows.Forms.ListBox listBox6;
         private System.Windows.Forms.ComboBox OpeningCB;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

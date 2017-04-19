@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EOP));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,7 +46,9 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -54,7 +57,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(368, 9);
+            this.label1.Location = new System.Drawing.Point(366, 103);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 16);
             this.label1.TabIndex = 0;
@@ -66,7 +69,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(486, 9);
+            this.label2.Location = new System.Drawing.Point(484, 103);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 16);
             this.label2.TabIndex = 1;
@@ -78,7 +81,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(665, 9);
+            this.label3.Location = new System.Drawing.Point(663, 103);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 16);
             this.label3.TabIndex = 2;
@@ -90,7 +93,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(12, 61);
+            this.label4.Location = new System.Drawing.Point(10, 155);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 16);
             this.label4.TabIndex = 3;
@@ -102,7 +105,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(12, 111);
+            this.label5.Location = new System.Drawing.Point(10, 205);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 16);
             this.label5.TabIndex = 4;
@@ -114,7 +117,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(12, 162);
+            this.label6.Location = new System.Drawing.Point(10, 256);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(55, 16);
             this.label6.TabIndex = 5;
@@ -241,7 +244,7 @@
             "Zijl 7",
             "Steiger 12",
             "Keizerstraat 108"});
-            this.comboBox1.Location = new System.Drawing.Point(76, 161);
+            this.comboBox1.Location = new System.Drawing.Point(74, 255);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(236, 21);
             this.comboBox1.TabIndex = 6;
@@ -258,7 +261,7 @@
             "Feijenoord",
             "Charlois",
             "Centrum"});
-            this.comboBox2.Location = new System.Drawing.Point(76, 111);
+            this.comboBox2.Location = new System.Drawing.Point(74, 205);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 7;
@@ -273,7 +276,7 @@
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "Rotterdam"});
-            this.comboBox3.Location = new System.Drawing.Point(76, 61);
+            this.comboBox3.Location = new System.Drawing.Point(74, 155);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 8;
@@ -284,7 +287,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(12, 343);
+            this.button1.Location = new System.Drawing.Point(10, 437);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 23);
             this.button1.TabIndex = 12;
@@ -298,7 +301,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(12, 372);
+            this.button2.Location = new System.Drawing.Point(10, 466);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 23);
             this.button2.TabIndex = 13;
@@ -312,7 +315,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(12, 401);
+            this.button3.Location = new System.Drawing.Point(10, 495);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(85, 23);
             this.button3.TabIndex = 14;
@@ -326,7 +329,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4.Location = new System.Drawing.Point(718, 372);
+            this.button4.Location = new System.Drawing.Point(716, 466);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(82, 53);
             this.button4.TabIndex = 15;
@@ -340,7 +343,7 @@
             this.listBox1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
             this.listBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(335, 28);
+            this.listBox1.Location = new System.Drawing.Point(333, 122);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(116, 329);
             this.listBox1.TabIndex = 65;
@@ -352,7 +355,7 @@
             this.listBox2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
             this.listBox2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(457, 28);
+            this.listBox2.Location = new System.Drawing.Point(455, 122);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(116, 329);
             this.listBox2.TabIndex = 66;
@@ -364,7 +367,7 @@
             this.listBox3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
             this.listBox3.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(579, 28);
+            this.listBox3.Location = new System.Drawing.Point(577, 122);
             this.listBox3.Name = "listBox3";
             this.listBox3.Size = new System.Drawing.Size(221, 329);
             this.listBox3.TabIndex = 67;
@@ -374,18 +377,29 @@
             // 
             this.pictureBox1.Image = global::appdesign.Properties.Resources.TA;
             this.pictureBox1.InitialImage = global::appdesign.Properties.Resources.recycled_texture_background_by_sandeep_m_d6aeau9_PZ9chud;
-            this.pictureBox1.Location = new System.Drawing.Point(806, 28);
+            this.pictureBox1.Location = new System.Drawing.Point(804, 122);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 329);
             this.pictureBox1.TabIndex = 68;
             this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::appdesign.Properties.Resources.Project_3_Icoon1_555;
+            this.pictureBox2.Location = new System.Drawing.Point(13, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(99, 86);
+            this.pictureBox2.TabIndex = 69;
+            this.pictureBox2.TabStop = false;
             // 
             // EOP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::appdesign.Properties.Resources.EOP;
-            this.ClientSize = new System.Drawing.Size(1012, 435);
+            this.ClientSize = new System.Drawing.Size(1012, 532);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listBox3);
             this.Controls.Add(this.listBox2);
@@ -403,10 +417,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EOP";
-            this.Text = "EOP";
+            this.Text = "ParkScouting";
             this.Load += new System.EventHandler(this.EOP_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -431,5 +447,6 @@
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

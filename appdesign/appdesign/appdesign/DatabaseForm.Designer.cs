@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Toevoegen = new System.Windows.Forms.Button();
             this.annuleren = new System.Windows.Forms.Button();
             this.naam = new System.Windows.Forms.Label();
@@ -49,6 +50,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.lat = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Toevoegen
@@ -57,7 +60,7 @@
             this.Toevoegen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Toevoegen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Toevoegen.ForeColor = System.Drawing.SystemColors.Control;
-            this.Toevoegen.Location = new System.Drawing.Point(208, 276);
+            this.Toevoegen.Location = new System.Drawing.Point(201, 330);
             this.Toevoegen.Name = "Toevoegen";
             this.Toevoegen.Size = new System.Drawing.Size(75, 39);
             this.Toevoegen.TabIndex = 10;
@@ -70,7 +73,7 @@
             this.annuleren.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.annuleren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.annuleren.ForeColor = System.Drawing.SystemColors.Control;
-            this.annuleren.Location = new System.Drawing.Point(208, 368);
+            this.annuleren.Location = new System.Drawing.Point(201, 422);
             this.annuleren.Name = "annuleren";
             this.annuleren.Size = new System.Drawing.Size(75, 23);
             this.annuleren.TabIndex = 12;
@@ -84,7 +87,7 @@
             this.naam.BackColor = System.Drawing.Color.Transparent;
             this.naam.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.naam.ForeColor = System.Drawing.Color.White;
-            this.naam.Location = new System.Drawing.Point(19, 54);
+            this.naam.Location = new System.Drawing.Point(12, 108);
             this.naam.Name = "naam";
             this.naam.Size = new System.Drawing.Size(64, 16);
             this.naam.TabIndex = 14;
@@ -96,7 +99,7 @@
             this.Ptype.BackColor = System.Drawing.Color.Transparent;
             this.Ptype.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ptype.ForeColor = System.Drawing.Color.White;
-            this.Ptype.Location = new System.Drawing.Point(19, 81);
+            this.Ptype.Location = new System.Drawing.Point(12, 135);
             this.Ptype.Name = "Ptype";
             this.Ptype.Size = new System.Drawing.Size(57, 16);
             this.Ptype.TabIndex = 16;
@@ -109,7 +112,7 @@
             this.aantal_zitplaatsen.BackColor = System.Drawing.Color.Transparent;
             this.aantal_zitplaatsen.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aantal_zitplaatsen.ForeColor = System.Drawing.Color.White;
-            this.aantal_zitplaatsen.Location = new System.Drawing.Point(19, 110);
+            this.aantal_zitplaatsen.Location = new System.Drawing.Point(12, 164);
             this.aantal_zitplaatsen.Name = "aantal_zitplaatsen";
             this.aantal_zitplaatsen.Size = new System.Drawing.Size(127, 16);
             this.aantal_zitplaatsen.TabIndex = 17;
@@ -122,7 +125,7 @@
             this.Padres.BackColor = System.Drawing.Color.Transparent;
             this.Padres.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Padres.ForeColor = System.Drawing.Color.White;
-            this.Padres.Location = new System.Drawing.Point(19, 138);
+            this.Padres.Location = new System.Drawing.Point(12, 192);
             this.Padres.Name = "Padres";
             this.Padres.Size = new System.Drawing.Size(64, 16);
             this.Padres.TabIndex = 18;
@@ -135,7 +138,7 @@
             this.Pplaats.BackColor = System.Drawing.Color.Transparent;
             this.Pplaats.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pplaats.ForeColor = System.Drawing.Color.White;
-            this.Pplaats.Location = new System.Drawing.Point(19, 167);
+            this.Pplaats.Location = new System.Drawing.Point(12, 221);
             this.Pplaats.Name = "Pplaats";
             this.Pplaats.Size = new System.Drawing.Size(67, 16);
             this.Pplaats.TabIndex = 19;
@@ -147,7 +150,7 @@
             this.Pgebied.BackColor = System.Drawing.Color.Transparent;
             this.Pgebied.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pgebied.ForeColor = System.Drawing.Color.White;
-            this.Pgebied.Location = new System.Drawing.Point(19, 195);
+            this.Pgebied.Location = new System.Drawing.Point(12, 249);
             this.Pgebied.Name = "Pgebied";
             this.Pgebied.Size = new System.Drawing.Size(72, 16);
             this.Pgebied.TabIndex = 20;
@@ -158,7 +161,7 @@
             this.name.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.name.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name.ForeColor = System.Drawing.SystemColors.Control;
-            this.name.Location = new System.Drawing.Point(161, 54);
+            this.name.Location = new System.Drawing.Point(154, 108);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(299, 21);
             this.name.TabIndex = 22;
@@ -168,7 +171,7 @@
             this.type.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.type.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.type.ForeColor = System.Drawing.SystemColors.Control;
-            this.type.Location = new System.Drawing.Point(161, 81);
+            this.type.Location = new System.Drawing.Point(154, 135);
             this.type.Name = "type";
             this.type.Size = new System.Drawing.Size(145, 21);
             this.type.TabIndex = 24;
@@ -178,7 +181,7 @@
             this.aantal_plaatsen.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.aantal_plaatsen.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aantal_plaatsen.ForeColor = System.Drawing.SystemColors.Control;
-            this.aantal_plaatsen.Location = new System.Drawing.Point(161, 110);
+            this.aantal_plaatsen.Location = new System.Drawing.Point(154, 164);
             this.aantal_plaatsen.Name = "aantal_plaatsen";
             this.aantal_plaatsen.Size = new System.Drawing.Size(57, 21);
             this.aantal_plaatsen.TabIndex = 25;
@@ -188,7 +191,7 @@
             this.adres.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.adres.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adres.ForeColor = System.Drawing.SystemColors.Control;
-            this.adres.Location = new System.Drawing.Point(161, 138);
+            this.adres.Location = new System.Drawing.Point(154, 192);
             this.adres.Name = "adres";
             this.adres.Size = new System.Drawing.Size(299, 21);
             this.adres.TabIndex = 26;
@@ -198,7 +201,7 @@
             this.plaats.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.plaats.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.plaats.ForeColor = System.Drawing.SystemColors.Control;
-            this.plaats.Location = new System.Drawing.Point(161, 167);
+            this.plaats.Location = new System.Drawing.Point(154, 221);
             this.plaats.Name = "plaats";
             this.plaats.Size = new System.Drawing.Size(156, 21);
             this.plaats.TabIndex = 27;
@@ -208,7 +211,7 @@
             this.gebied.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.gebied.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gebied.ForeColor = System.Drawing.SystemColors.Control;
-            this.gebied.Location = new System.Drawing.Point(161, 195);
+            this.gebied.Location = new System.Drawing.Point(154, 249);
             this.gebied.Name = "gebied";
             this.gebied.Size = new System.Drawing.Size(156, 21);
             this.gebied.TabIndex = 28;
@@ -218,7 +221,7 @@
             this.ophalen.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ophalen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ophalen.ForeColor = System.Drawing.SystemColors.Control;
-            this.ophalen.Location = new System.Drawing.Point(289, 368);
+            this.ophalen.Location = new System.Drawing.Point(282, 422);
             this.ophalen.Name = "ophalen";
             this.ophalen.Size = new System.Drawing.Size(75, 23);
             this.ophalen.TabIndex = 11;
@@ -231,7 +234,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(127, 368);
+            this.button1.Location = new System.Drawing.Point(120, 422);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 29;
@@ -244,7 +247,7 @@
             this.Longit.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Longit.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Longit.ForeColor = System.Drawing.SystemColors.Control;
-            this.Longit.Location = new System.Drawing.Point(161, 222);
+            this.Longit.Location = new System.Drawing.Point(154, 276);
             this.Longit.Name = "Longit";
             this.Longit.Size = new System.Drawing.Size(145, 21);
             this.Longit.TabIndex = 31;
@@ -255,7 +258,7 @@
             this.lng.BackColor = System.Drawing.Color.Transparent;
             this.lng.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lng.ForeColor = System.Drawing.Color.White;
-            this.lng.Location = new System.Drawing.Point(19, 222);
+            this.lng.Location = new System.Drawing.Point(12, 276);
             this.lng.Name = "lng";
             this.lng.Size = new System.Drawing.Size(85, 16);
             this.lng.TabIndex = 30;
@@ -266,7 +269,7 @@
             this.textBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.textBox2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox2.Location = new System.Drawing.Point(161, 249);
+            this.textBox2.Location = new System.Drawing.Point(154, 303);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(145, 21);
             this.textBox2.TabIndex = 33;
@@ -278,7 +281,7 @@
             this.lat.BackColor = System.Drawing.Color.Transparent;
             this.lat.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lat.ForeColor = System.Drawing.Color.White;
-            this.lat.Location = new System.Drawing.Point(19, 249);
+            this.lat.Location = new System.Drawing.Point(12, 303);
             this.lat.Name = "lat";
             this.lat.Size = new System.Drawing.Size(73, 16);
             this.lat.TabIndex = 32;
@@ -290,18 +293,29 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(72, 330);
+            this.label1.Location = new System.Drawing.Point(65, 384);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(351, 13);
             this.label1.TabIndex = 34;
             this.label1.Text = "*Alle velden met een * zijn verplicht om ingevuld te worden";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::appdesign.Properties.Resources.Project_3_Icoon1_555;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(99, 86);
+            this.pictureBox1.TabIndex = 35;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::appdesign.Properties.Resources.DatabaseForm;
-            this.ClientSize = new System.Drawing.Size(507, 403);
+            this.ClientSize = new System.Drawing.Size(490, 458);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.lat);
@@ -323,10 +337,12 @@
             this.Controls.Add(this.annuleren);
             this.Controls.Add(this.ophalen);
             this.Controls.Add(this.Toevoegen);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "opslaan";
+            this.Text = "ParkScouting";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,6 +370,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label lat;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

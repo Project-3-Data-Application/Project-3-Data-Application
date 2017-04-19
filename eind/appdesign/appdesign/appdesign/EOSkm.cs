@@ -37,5 +37,10 @@ namespace appdesign
             EOPopslaan EOPopslaan = new EOPopslaan();
             EOPopslaan.Show();
         }
+
+        private void EOSkm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

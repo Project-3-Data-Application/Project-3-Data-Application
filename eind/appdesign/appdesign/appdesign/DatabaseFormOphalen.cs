@@ -447,5 +447,11 @@ namespace DatabaseForm
                 listBox6.SetSelected(id, true);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Grafiek_parkeergarages PK = new Grafiek_parkeergarages();
+            PK.Show();
+        }
     }
 }

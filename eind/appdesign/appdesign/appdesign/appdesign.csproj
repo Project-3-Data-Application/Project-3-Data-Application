@@ -264,6 +264,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Project 3 Icoon1.555.png" />
+    <None Include="Resources\Project 3 Icoon1.55.jpg" />
+    <None Include="Resources\Project 3 Icoon1.55.png" />
+    <None Include="Resources\menu1.jpg" />
+    <None Include="Resources\Project3Icoon1.44.png" />
     <None Include="Resources\Grafiek.jpg" />
   </ItemGroup>
   <ItemGroup>
