@@ -14,7 +14,7 @@ namespace appdesign
         }
 
         //Recieve an image with marker (lat and long required
-        public String getGoogleMap(String e, Double lat, Double latitude, int imgsizex = 400, int imgsizey = 400, int mapzoom = 14)
+        public String getGoogleMap(String e, Double lat, Double longitude, int imgsizex = 400, int imgsizey = 400, int mapzoom = 14)
         {
             var map = new StaticMapRequest();
 
@@ -30,7 +30,7 @@ namespace appdesign
             map.Sensor = false;
 
             //Add the marker
-            map.Markers.Add(new LatLng(latitude, latitude));
+            map.Markers.Add(new LatLng(lat, longitude));
 
             //returns the full image with the given parameters
             return map.ToUri().ToString();
