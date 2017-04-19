@@ -227,9 +227,10 @@
             this.radioButton1.ForeColor = System.Drawing.SystemColors.Control;
             this.radioButton1.Location = new System.Drawing.Point(20, 114);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(14, 13);
+            this.radioButton1.Size = new System.Drawing.Size(250, 17);
             this.radioButton1.TabIndex = 73;
             this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Aantal parkeergarages per gebied";
             this.radioButton1.UseVisualStyleBackColor = false;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
@@ -241,10 +242,10 @@
             this.radioButton2.ForeColor = System.Drawing.SystemColors.Control;
             this.radioButton2.Location = new System.Drawing.Point(20, 137);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(255, 17);
+            this.radioButton2.Size = new System.Drawing.Size(253, 17);
             this.radioButton2.TabIndex = 74;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Aantal plaatsen per parkeergarage";
+            this.radioButton2.Text = "Aantal parkeerplaatsen per gebied";
             this.radioButton2.UseVisualStyleBackColor = false;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 

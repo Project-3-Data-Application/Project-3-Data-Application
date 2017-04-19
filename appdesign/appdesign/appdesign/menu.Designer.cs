@@ -28,42 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.instructionsbtn = new System.Windows.Forms.Button();
-            this.creditsbtn = new System.Windows.Forms.Button();
             this.parkingbtn = new System.Windows.Forms.Button();
             this.chargingbtn = new System.Windows.Forms.Button();
             this.eventbtn = new System.Windows.Forms.Button();
             this.exitbtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // instructionsbtn
-            // 
-            this.instructionsbtn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.instructionsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.instructionsbtn.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.instructionsbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.instructionsbtn.Location = new System.Drawing.Point(12, 274);
-            this.instructionsbtn.Name = "instructionsbtn";
-            this.instructionsbtn.Size = new System.Drawing.Size(75, 23);
-            this.instructionsbtn.TabIndex = 0;
-            this.instructionsbtn.Text = "Instructies";
-            this.instructionsbtn.UseVisualStyleBackColor = false;
-            this.instructionsbtn.Click += new System.EventHandler(this.instructionsbtn_Click);
-            // 
-            // creditsbtn
-            // 
-            this.creditsbtn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.creditsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.creditsbtn.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.creditsbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.creditsbtn.Location = new System.Drawing.Point(247, 274);
-            this.creditsbtn.Name = "creditsbtn";
-            this.creditsbtn.Size = new System.Drawing.Size(75, 23);
-            this.creditsbtn.TabIndex = 1;
-            this.creditsbtn.Text = "Credits";
-            this.creditsbtn.UseVisualStyleBackColor = false;
-            this.creditsbtn.Click += new System.EventHandler(this.creditsbtn_Click);
             // 
             // parkingbtn
             // 
@@ -113,7 +83,7 @@
             this.exitbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitbtn.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.exitbtn.Location = new System.Drawing.Point(128, 326);
+            this.exitbtn.Location = new System.Drawing.Point(128, 300);
             this.exitbtn.Name = "exitbtn";
             this.exitbtn.Size = new System.Drawing.Size(84, 23);
             this.exitbtn.TabIndex = 5;
@@ -141,14 +111,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::appdesign.Properties.Resources.menu1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(334, 361);
+            this.ClientSize = new System.Drawing.Size(334, 336);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.exitbtn);
             this.Controls.Add(this.eventbtn);
             this.Controls.Add(this.chargingbtn);
             this.Controls.Add(this.parkingbtn);
-            this.Controls.Add(this.creditsbtn);
-            this.Controls.Add(this.instructionsbtn);
             this.MaximizeBox = false;
             this.Name = "Parkingscouting";
             this.Text = "Parkingscouting";
@@ -158,9 +126,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button instructionsbtn;
-        private System.Windows.Forms.Button creditsbtn;
         private System.Windows.Forms.Button parkingbtn;
         private System.Windows.Forms.Button chargingbtn;
         private System.Windows.Forms.Button eventbtn;

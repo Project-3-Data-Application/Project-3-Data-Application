@@ -116,11 +116,11 @@ namespace DatabaseForm
                             {
                                 /*De opgehaalde waarden vanuit postgreSQL worden in de te*/
                                 textBox1.Text += reader.GetString(0) + "\r\n";
-                                textBox2.Text += reader.GetString(2) + "\r\n";
-                                textBox3.Text += reader.GetString(3) + "\r\n";
-                                textBox4.Text += reader.GetString(4) + "\r\n";
-                                textBox5.Text += reader.GetString(5) + "\r\n";
-                                textBox6.Text += reader.GetString(6) + "\r\n";
+                                textBox2.Text += reader.GetString(1) + "\r\n";
+                                textBox3.Text += reader.GetString(2) + "\r\n";
+                                textBox4.Text += reader.GetString(3) + "\r\n";
+                                textBox5.Text += reader.GetString(4) + "\r\n";
+                                textBox6.Text += reader.GetString(5) + "\r\n";
                                 comboBox1.SelectedItem = null;
                                 comboBox2.SelectedItem = null;
                                 comboBox3.SelectedItem = null;
@@ -206,11 +206,11 @@ namespace DatabaseForm
                             while (reader.Read())
                             {
                                 textBox1.Text += reader.GetString(0) + "\r\n";
-                                textBox2.Text += reader.GetString(2) + "\r\n";
-                                textBox3.Text += reader.GetString(3) + "\r\n";
-                                textBox4.Text += reader.GetString(4) + "\r\n";
-                                textBox5.Text += reader.GetString(5) + "\r\n";
-                                textBox6.Text += reader.GetString(6) + "\r\n";
+                                textBox2.Text += reader.GetString(1) + "\r\n";
+                                textBox3.Text += reader.GetString(2) + "\r\n";
+                                textBox4.Text += reader.GetString(3) + "\r\n";
+                                textBox5.Text += reader.GetString(4) + "\r\n";
+                                textBox6.Text += reader.GetString(5) + "\r\n";
                                 comboBox1.SelectedItem = null;
                                 comboBox2.SelectedItem = null;
                                 comboBox3.SelectedItem = null;

@@ -26,11 +26,17 @@ namespace DatabaseForm
 
         private void opslaan_Click(object sender, EventArgs e)
         {
+            /*De blnfound functie zal worden gebruikt om te controleren of de primary keys al bestaan in de database*/
             bool blnfound = false;
+            /*Er word een connectie gedefinieerd met de database*/
             NpgsqlConnection cnx = new NpgsqlConnection("Server=127.0.0.1;Port=5432; User Id=postgres;Password=Oujdaoui#48;Database=Dataset Rotterdam");
+            /*De gedefinieerd database word geopend*/
             cnx.Open();
+            /*De command word gedefinieerd*/
             NpgsqlCommand cmdCheck = new NpgsqlCommand("select * from parking where adres = '" + adres.Text + "' and name = '" + name.Text + "' and gebied = '" + gebied.Text + "' and type = '" + type.Text + "' and plaats = '" +  plaats.Text + "';", cnx);
+            /*De waarden van de command worden ingelezen*/
             NpgsqlDataReader dr = cmdCheck.ExecuteReader();
+            /*De boolError functie zal worden gebruikt om te controleren of de primary keys in de formulier zijn ingevuld*/
             bool boolError = false;
             if (adres.Text == "" || gebied.Text == "" || plaats.Text == "" || type.Text == "" || naam.Text == "")
             {
@@ -178,6 +184,7 @@ namespace DatabaseForm
         }
         private void annuleren_Click(object sender, EventArgs e)
         {
+            /*De Applicatie word gesloten bij het klikken van de knop "Afsluiten"*/
             Application.Exit();
         }
 
@@ -193,6 +200,7 @@ namespace DatabaseForm
 
         private void ophalen_Click(object sender, EventArgs e)
         {
+            /*De huidige formulier word gesloten en het keuzemenu word geopend bij het klikken van de knop "Vorige"*/
             this.Close();
             appdesign.Keuzemenu km = new appdesign.Keuzemenu();
             km.Show();
@@ -216,6 +224,7 @@ namespace DatabaseForm
 
         private void button1_Click(object sender, EventArgs e)
         {
+            /*De huidige formulier word gesloten en het Hoofdmenu word geopend bij het klikken van de knop "Hoofdmenu"*/
             this.Close();
             appdesign.Parkingscouting PS = new appdesign.Parkingscouting();
             PS.Show();
