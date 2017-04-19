@@ -56,6 +56,8 @@
             this.listBox4 = new System.Windows.Forms.ListBox();
             this.listBox5 = new System.Windows.Forms.ListBox();
             this.listBox6 = new System.Windows.Forms.ListBox();
+            this.OpeningCB = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -64,7 +66,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(386, 8);
+            this.label1.Location = new System.Drawing.Point(270, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 16);
             this.label1.TabIndex = 0;
@@ -76,7 +78,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(526, 8);
+            this.label2.Location = new System.Drawing.Point(410, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 16);
             this.label2.TabIndex = 1;
@@ -88,7 +90,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(899, 8);
+            this.label3.Location = new System.Drawing.Point(783, 10);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 16);
             this.label3.TabIndex = 2;
@@ -101,7 +103,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(799, 8);
+            this.label4.Location = new System.Drawing.Point(683, 10);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 16);
             this.label4.TabIndex = 3;
@@ -113,7 +115,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(1007, 8);
+            this.label5.Location = new System.Drawing.Point(852, 10);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(158, 16);
             this.label5.TabIndex = 4;
@@ -130,7 +132,7 @@
             this.ReserverenCB.Items.AddRange(new object[] {
             "Ja",
             "Nee"});
-            this.ReserverenCB.Location = new System.Drawing.Point(1011, 27);
+            this.ReserverenCB.Location = new System.Drawing.Point(895, 29);
             this.ReserverenCB.Name = "ReserverenCB";
             this.ReserverenCB.Size = new System.Drawing.Size(76, 21);
             this.ReserverenCB.TabIndex = 5;
@@ -146,7 +148,7 @@
             this.BedektCB.Items.AddRange(new object[] {
             "Ja",
             "Nee"});
-            this.BedektCB.Location = new System.Drawing.Point(802, 27);
+            this.BedektCB.Location = new System.Drawing.Point(686, 29);
             this.BedektCB.Name = "BedektCB";
             this.BedektCB.Size = new System.Drawing.Size(52, 21);
             this.BedektCB.TabIndex = 6;
@@ -170,7 +172,7 @@
             "Centrum",
             "Feijenoord",
             ""});
-            this.GebiedCB.Location = new System.Drawing.Point(860, 27);
+            this.GebiedCB.Location = new System.Drawing.Point(744, 29);
             this.GebiedCB.Name = "GebiedCB";
             this.GebiedCB.Size = new System.Drawing.Size(145, 21);
             this.GebiedCB.TabIndex = 7;
@@ -206,7 +208,7 @@
             "Tentoonstelling",
             "Park",
             "Architectuur"});
-            this.TACB.Location = new System.Drawing.Point(512, 27);
+            this.TACB.Location = new System.Drawing.Point(396, 29);
             this.TACB.Name = "TACB";
             this.TACB.Size = new System.Drawing.Size(156, 21);
             this.TACB.TabIndex = 8;
@@ -261,7 +263,7 @@
             "Garage Rotterdam",
             "Schoonoord",
             "De Hef"});
-            this.AttractieCB.Location = new System.Drawing.Point(338, 27);
+            this.AttractieCB.Location = new System.Drawing.Point(222, 29);
             this.AttractieCB.Name = "AttractieCB";
             this.AttractieCB.Size = new System.Drawing.Size(168, 21);
             this.AttractieCB.TabIndex = 9;
@@ -340,7 +342,7 @@
             this.PlaatsCB.FormattingEnabled = true;
             this.PlaatsCB.Items.AddRange(new object[] {
             "Rotterdam"});
-            this.PlaatsCB.Location = new System.Drawing.Point(674, 27);
+            this.PlaatsCB.Location = new System.Drawing.Point(558, 29);
             this.PlaatsCB.Name = "PlaatsCB";
             this.PlaatsCB.Size = new System.Drawing.Size(122, 21);
             this.PlaatsCB.TabIndex = 16;
@@ -352,7 +354,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.Control;
-            this.label11.Location = new System.Drawing.Point(706, 8);
+            this.label11.Location = new System.Drawing.Point(590, 10);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(56, 16);
             this.label11.TabIndex = 15;
@@ -497,12 +499,80 @@
             this.listBox6.TabIndex = 69;
             this.listBox6.SelectedIndexChanged += new System.EventHandler(this.listBox6_SelectedIndexChanged);
             // 
+            // OpeningCB
+            // 
+            this.OpeningCB.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.OpeningCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.OpeningCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OpeningCB.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OpeningCB.ForeColor = System.Drawing.SystemColors.Control;
+            this.OpeningCB.FormattingEnabled = true;
+            this.OpeningCB.Items.AddRange(new object[] {
+            "Euromast",
+            "Kubuswoningen",
+            "Museum Boijmans Van Beuningen",
+            "Erasmusbrug",
+            "Kunsthal Rotterdam",
+            "Wereldmuseum Rotterdam",
+            "Grote of Sint-Laurenskerk",
+            "Diergaarde Blijdorp",
+            "Witte Huis",
+            "Maritiem Museum Rotterdam",
+            "Nederlands Fotomuseum",
+            "Witte de With",
+            "Van Nellefabriek",
+            "Oceanium",
+            "Chabot Museum",
+            "De Doelen",
+            "Natuurhistorische Museum Rotterdam",
+            "De verwoeste stad",
+            "Markthal",
+            "Miniworld Rotterdam",
+            "Plaswijckpark",
+            "Het Park",
+            "Vroesenpark",
+            "Oude Haven",
+            "Roel Langerakpark",
+            "Havenmuseum",
+            "Museum Rotterdam",
+            "Veerhaven",
+            "Huis Sonneveld",
+            "Rijnhaven",
+            "Hop-on Hop-off Rotterdam B.V.",
+            "Leuvehaven",
+            "Mariniersmuseum",
+            "Stadsarchief Rotterdam",
+            "Belasting & Douane Museum",
+            "Rivierahal",
+            "Dutch Pinball Museum",
+            "Garage Rotterdam",
+            "Schoonoord",
+            "De Hef"});
+            this.OpeningCB.Location = new System.Drawing.Point(977, 29);
+            this.OpeningCB.Name = "OpeningCB";
+            this.OpeningCB.Size = new System.Drawing.Size(168, 21);
+            this.OpeningCB.TabIndex = 71;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.Control;
+            this.label14.Location = new System.Drawing.Point(1010, 10);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(116, 16);
+            this.label14.TabIndex = 70;
+            this.label14.Text = "Openingstijden:";
+            // 
             // TA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::appdesign.Properties.Resources.TA;
             this.ClientSize = new System.Drawing.Size(1299, 510);
+            this.Controls.Add(this.OpeningCB);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.listBox6);
             this.Controls.Add(this.listBox5);
             this.Controls.Add(this.listBox4);
@@ -568,5 +638,7 @@
         private System.Windows.Forms.ListBox listBox4;
         private System.Windows.Forms.ListBox listBox5;
         private System.Windows.Forms.ListBox listBox6;
+        private System.Windows.Forms.ComboBox OpeningCB;
+        private System.Windows.Forms.Label label14;
     }
 }
