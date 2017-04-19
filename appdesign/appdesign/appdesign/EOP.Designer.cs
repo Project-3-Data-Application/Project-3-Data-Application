@@ -37,13 +37,15 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -276,42 +278,6 @@
             this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 8;
             // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Location = new System.Drawing.Point(335, 28);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(116, 338);
-            this.textBox1.TabIndex = 9;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox2.Location = new System.Drawing.Point(457, 28);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(116, 338);
-            this.textBox2.TabIndex = 10;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox3.Location = new System.Drawing.Point(579, 28);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(221, 338);
-            this.textBox3.TabIndex = 11;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -368,19 +334,66 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.listBox1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.listBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(335, 28);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(116, 329);
+            this.listBox1.TabIndex = 65;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // listBox2
+            // 
+            this.listBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.listBox2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.listBox2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(457, 28);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(116, 329);
+            this.listBox2.TabIndex = 66;
+            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            // 
+            // listBox3
+            // 
+            this.listBox3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.listBox3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.listBox3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.listBox3.FormattingEnabled = true;
+            this.listBox3.Location = new System.Drawing.Point(579, 28);
+            this.listBox3.Name = "listBox3";
+            this.listBox3.Size = new System.Drawing.Size(221, 329);
+            this.listBox3.TabIndex = 67;
+            this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::appdesign.Properties.Resources.TA;
+            this.pictureBox1.InitialImage = global::appdesign.Properties.Resources.recycled_texture_background_by_sandeep_m_d6aeau9_PZ9chud;
+            this.pictureBox1.Location = new System.Drawing.Point(806, 28);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 329);
+            this.pictureBox1.TabIndex = 68;
+            this.pictureBox1.TabStop = false;
+            // 
             // EOP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::appdesign.Properties.Resources.EOP;
-            this.ClientSize = new System.Drawing.Size(812, 435);
+            this.ClientSize = new System.Drawing.Size(1012, 435);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.listBox3);
+            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
@@ -390,10 +403,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.MaximizeBox = false;
             this.Name = "EOP";
             this.Text = "EOP";
             this.Load += new System.EventHandler(this.EOP_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -410,12 +423,13 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
