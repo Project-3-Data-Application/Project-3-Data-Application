@@ -44,16 +44,17 @@
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.listBox4 = new System.Windows.Forms.ListBox();
+            this.listBox5 = new System.Windows.Forms.ListBox();
+            this.listBox6 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.parkingBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Pgebied
@@ -62,7 +63,7 @@
             this.Pgebied.BackColor = System.Drawing.Color.Transparent;
             this.Pgebied.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pgebied.ForeColor = System.Drawing.SystemColors.Control;
-            this.Pgebied.Location = new System.Drawing.Point(1023, 21);
+            this.Pgebied.Location = new System.Drawing.Point(916, 21);
             this.Pgebied.Name = "Pgebied";
             this.Pgebied.Size = new System.Drawing.Size(63, 16);
             this.Pgebied.TabIndex = 38;
@@ -74,7 +75,7 @@
             this.Pplaats.BackColor = System.Drawing.Color.Transparent;
             this.Pplaats.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pplaats.ForeColor = System.Drawing.SystemColors.Control;
-            this.Pplaats.Location = new System.Drawing.Point(889, 21);
+            this.Pplaats.Location = new System.Drawing.Point(782, 21);
             this.Pplaats.Name = "Pplaats";
             this.Pplaats.Size = new System.Drawing.Size(58, 16);
             this.Pplaats.TabIndex = 37;
@@ -86,7 +87,7 @@
             this.Padres.BackColor = System.Drawing.Color.Transparent;
             this.Padres.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Padres.ForeColor = System.Drawing.SystemColors.Control;
-            this.Padres.Location = new System.Drawing.Point(675, 21);
+            this.Padres.Location = new System.Drawing.Point(568, 21);
             this.Padres.Name = "Padres";
             this.Padres.Size = new System.Drawing.Size(55, 16);
             this.Padres.TabIndex = 36;
@@ -98,7 +99,7 @@
             this.aantal_zitplaatsen.BackColor = System.Drawing.Color.Transparent;
             this.aantal_zitplaatsen.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aantal_zitplaatsen.ForeColor = System.Drawing.SystemColors.Control;
-            this.aantal_zitplaatsen.Location = new System.Drawing.Point(489, 21);
+            this.aantal_zitplaatsen.Location = new System.Drawing.Point(382, 21);
             this.aantal_zitplaatsen.Name = "aantal_zitplaatsen";
             this.aantal_zitplaatsen.Size = new System.Drawing.Size(127, 16);
             this.aantal_zitplaatsen.TabIndex = 35;
@@ -110,7 +111,7 @@
             this.Ptype.BackColor = System.Drawing.Color.Transparent;
             this.Ptype.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ptype.ForeColor = System.Drawing.SystemColors.Control;
-            this.Ptype.Location = new System.Drawing.Point(399, 21);
+            this.Ptype.Location = new System.Drawing.Point(292, 21);
             this.Ptype.Name = "Ptype";
             this.Ptype.Size = new System.Drawing.Size(48, 16);
             this.Ptype.TabIndex = 34;
@@ -122,7 +123,7 @@
             this.naam.BackColor = System.Drawing.Color.Transparent;
             this.naam.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.naam.ForeColor = System.Drawing.SystemColors.Control;
-            this.naam.Location = new System.Drawing.Point(165, 21);
+            this.naam.Location = new System.Drawing.Point(101, 21);
             this.naam.Name = "naam";
             this.naam.Size = new System.Drawing.Size(55, 16);
             this.naam.TabIndex = 32;
@@ -134,7 +135,7 @@
             this.annuleren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.annuleren.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.annuleren.ForeColor = System.Drawing.SystemColors.Control;
-            this.annuleren.Location = new System.Drawing.Point(622, 420);
+            this.annuleren.Location = new System.Drawing.Point(561, 418);
             this.annuleren.Name = "annuleren";
             this.annuleren.Size = new System.Drawing.Size(82, 23);
             this.annuleren.TabIndex = 30;
@@ -148,7 +149,7 @@
             this.ophalen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ophalen.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ophalen.ForeColor = System.Drawing.SystemColors.Control;
-            this.ophalen.Location = new System.Drawing.Point(1035, 393);
+            this.ophalen.Location = new System.Drawing.Point(928, 393);
             this.ophalen.Name = "ophalen";
             this.ophalen.Size = new System.Drawing.Size(81, 50);
             this.ophalen.TabIndex = 29;
@@ -188,7 +189,7 @@
             "P + R Noorderhelling"});
             this.comboBox1.Location = new System.Drawing.Point(12, 40);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(334, 21);
+            this.comboBox1.Size = new System.Drawing.Size(227, 21);
             this.comboBox1.TabIndex = 49;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -200,9 +201,8 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Parkeergarage",
-            "Parkeerterrein",
             "P + R"});
-            this.comboBox2.Location = new System.Drawing.Point(352, 40);
+            this.comboBox2.Location = new System.Drawing.Point(245, 40);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(154, 21);
             this.comboBox2.TabIndex = 50;
@@ -228,7 +228,7 @@
             "473",
             "339",
             "322"});
-            this.comboBox3.Location = new System.Drawing.Point(512, 40);
+            this.comboBox3.Location = new System.Drawing.Point(405, 40);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(55, 21);
             this.comboBox3.TabIndex = 51;
@@ -255,7 +255,7 @@
             "Prins Alexanderlaan 35",
             "Kipstraat 177",
             "Stadionweg 1"});
-            this.comboBox4.Location = new System.Drawing.Point(573, 40);
+            this.comboBox4.Location = new System.Drawing.Point(466, 40);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(262, 21);
             this.comboBox4.TabIndex = 52;
@@ -268,7 +268,7 @@
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
             "Rotterdam"});
-            this.comboBox5.Location = new System.Drawing.Point(841, 40);
+            this.comboBox5.Location = new System.Drawing.Point(734, 40);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(138, 21);
             this.comboBox5.TabIndex = 53;
@@ -282,87 +282,16 @@
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
             "Centrum",
-            "Kralingen-Crooswijk",
+            "Kralingen-Oost",
             "Feijenoord",
+            "Zuidplein",
+            "Pendrecht",
             "Prins Alexander",
-            "IJsselmonde",
-            "Charlois"});
-            this.comboBox6.Location = new System.Drawing.Point(985, 40);
+            "Sportdorp"});
+            this.comboBox6.Location = new System.Drawing.Point(878, 40);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(131, 21);
             this.comboBox6.TabIndex = 54;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Location = new System.Drawing.Point(12, 67);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(334, 318);
-            this.textBox1.TabIndex = 55;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox2.Location = new System.Drawing.Point(352, 67);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(154, 318);
-            this.textBox2.TabIndex = 56;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox3.Location = new System.Drawing.Point(512, 67);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(55, 318);
-            this.textBox3.TabIndex = 57;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox4.Location = new System.Drawing.Point(573, 67);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(262, 318);
-            this.textBox4.TabIndex = 58;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox5.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox5.Location = new System.Drawing.Point(841, 67);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(138, 318);
-            this.textBox5.TabIndex = 59;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox6.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox6.Location = new System.Drawing.Point(985, 67);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(131, 318);
-            this.textBox6.TabIndex = 60;
             // 
             // button1
             // 
@@ -370,7 +299,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(534, 420);
+            this.button1.Location = new System.Drawing.Point(473, 418);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(82, 23);
             this.button1.TabIndex = 61;
@@ -384,7 +313,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(446, 420);
+            this.button2.Location = new System.Drawing.Point(385, 418);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(82, 23);
             this.button2.TabIndex = 62;
@@ -392,35 +321,103 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // listBox1
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(12, 393);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 50);
-            this.button3.TabIndex = 63;
-            this.button3.Text = "Toon Grafiek";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.listBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.listBox1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.listBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(12, 67);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(227, 316);
+            this.listBox1.TabIndex = 63;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // listBox2
+            // 
+            this.listBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.listBox2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.listBox2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(246, 67);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(154, 316);
+            this.listBox2.TabIndex = 64;
+            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::appdesign.Properties.Resources.TA;
+            this.pictureBox1.InitialImage = global::appdesign.Properties.Resources.recycled_texture_background_by_sandeep_m_d6aeau9_PZ9chud;
+            this.pictureBox1.Location = new System.Drawing.Point(1015, 67);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 316);
+            this.pictureBox1.TabIndex = 65;
+            this.pictureBox1.TabStop = false;
+            // 
+            // listBox3
+            // 
+            this.listBox3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.listBox3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.listBox3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.listBox3.FormattingEnabled = true;
+            this.listBox3.Location = new System.Drawing.Point(405, 67);
+            this.listBox3.Name = "listBox3";
+            this.listBox3.Size = new System.Drawing.Size(55, 316);
+            this.listBox3.TabIndex = 66;
+            this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
+            // 
+            // listBox4
+            // 
+            this.listBox4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.listBox4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.listBox4.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.listBox4.FormattingEnabled = true;
+            this.listBox4.Location = new System.Drawing.Point(466, 67);
+            this.listBox4.Name = "listBox4";
+            this.listBox4.Size = new System.Drawing.Size(262, 316);
+            this.listBox4.TabIndex = 67;
+            this.listBox4.SelectedIndexChanged += new System.EventHandler(this.listBox4_SelectedIndexChanged);
+            // 
+            // listBox5
+            // 
+            this.listBox5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.listBox5.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.listBox5.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.listBox5.FormattingEnabled = true;
+            this.listBox5.Location = new System.Drawing.Point(734, 67);
+            this.listBox5.Name = "listBox5";
+            this.listBox5.Size = new System.Drawing.Size(138, 316);
+            this.listBox5.TabIndex = 68;
+            this.listBox5.SelectedIndexChanged += new System.EventHandler(this.listBox5_SelectedIndexChanged);
+            // 
+            // listBox6
+            // 
+            this.listBox6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.listBox6.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.listBox6.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.listBox6.FormattingEnabled = true;
+            this.listBox6.Location = new System.Drawing.Point(878, 67);
+            this.listBox6.Name = "listBox6";
+            this.listBox6.Size = new System.Drawing.Size(131, 316);
+            this.listBox6.TabIndex = 69;
+            this.listBox6.SelectedIndexChanged += new System.EventHandler(this.listBox6_SelectedIndexChanged);
             // 
             // DatabaseFormOphalen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::appdesign.Properties.Resources.DatabaseFormOphalen;
-            this.ClientSize = new System.Drawing.Size(1132, 455);
-            this.Controls.Add(this.button3);
+            this.ClientSize = new System.Drawing.Size(1221, 455);
+            this.Controls.Add(this.listBox6);
+            this.Controls.Add(this.listBox5);
+            this.Controls.Add(this.listBox4);
+            this.Controls.Add(this.listBox3);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox6);
             this.Controls.Add(this.comboBox5);
             this.Controls.Add(this.comboBox4);
@@ -435,11 +432,11 @@
             this.Controls.Add(this.naam);
             this.Controls.Add(this.annuleren);
             this.Controls.Add(this.ophalen);
-            this.MaximizeBox = false;
             this.Name = "DatabaseFormOphalen";
             this.Text = "DatabaseFormOphalen";
             this.Load += new System.EventHandler(this.DatabaseFormOphalen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.parkingBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -461,14 +458,14 @@
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.ListBox listBox5;
+        private System.Windows.Forms.ListBox listBox6;
     }
 }
