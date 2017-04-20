@@ -351,8 +351,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::appdesign.Properties.Resources.TA;
-            this.pictureBox1.InitialImage = global::appdesign.Properties.Resources.recycled_texture_background_by_sandeep_m_d6aeau9_PZ9chud;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(1013, 150);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 316);
